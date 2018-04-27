@@ -26,11 +26,6 @@
 	</natures>
 	<linkedResources>
 		<link>
-			<name>Application/App</name>
-			<type>2</type>
-			<locationURI>PARENT-4-PROJECT_LOC/Common/App</locationURI>
-		</link>
-		<link>
 			<name>Drivers/MQTT-Paho</name>
 			<type>2</type>
 			<locationURI>PARENT-4-PROJECT_LOC/Common/MQTT-Paho</locationURI>
@@ -44,56 +39,6 @@
 			<name>Drivers/atbox</name>
 			<type>2</type>
 			<locationURI>PARENT-4-PROJECT_LOC/Common/atbox</locationURI>
-		</link>
-		<link>
-			<name>Application/SW4STM32/startup_stm32f401xe.s</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/startup_stm32f401xe.s</locationURI>
-		</link>
-		<link>
-			<name>Application/User/crc.c</name>
-			<type>1</type>
-			<locationURI>PARENT-3-PROJECT_LOC/Src/crc.c</locationURI>
-		</link>
-		<link>
-			<name>Application/User/dma.c</name>
-			<type>1</type>
-			<locationURI>PARENT-3-PROJECT_LOC/Src/dma.c</locationURI>
-		</link>
-		<link>
-			<name>Application/User/gpio.c</name>
-			<type>1</type>
-			<locationURI>PARENT-3-PROJECT_LOC/Src/gpio.c</locationURI>
-		</link>
-		<link>
-			<name>Application/User/i2c.c</name>
-			<type>1</type>
-			<locationURI>PARENT-3-PROJECT_LOC/Src/i2c.c</locationURI>
-		</link>
-		<link>
-			<name>Application/User/main.c</name>
-			<type>1</type>
-			<locationURI>PARENT-3-PROJECT_LOC/Src/main.c</locationURI>
-		</link>
-		<link>
-			<name>Application/User/stm32f4xx_hal_msp.c</name>
-			<type>1</type>
-			<locationURI>PARENT-3-PROJECT_LOC/Src/stm32f4xx_hal_msp.c</locationURI>
-		</link>
-		<link>
-			<name>Application/User/stm32f4xx_it.c</name>
-			<type>1</type>
-			<locationURI>PARENT-3-PROJECT_LOC/Src/stm32f4xx_it.c</locationURI>
-		</link>
-		<link>
-			<name>Application/User/tim.c</name>
-			<type>1</type>
-			<locationURI>PARENT-3-PROJECT_LOC/Src/tim.c</locationURI>
-		</link>
-		<link>
-			<name>Application/User/usart.c</name>
-			<type>1</type>
-			<locationURI>PARENT-3-PROJECT_LOC/Src/usart.c</locationURI>
 		</link>
 		<link>
 			<name>Drivers/CMSIS/system_stm32f4xx.c</name>
