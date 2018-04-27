@@ -8,13 +8,13 @@
     
 - Include the following paths
 
-	"../../../../../Common/App/Inc"
-	"../../../../../Common/App"
-	"../../../../../Common/MQTT-Paho/MQTTClient-C/src"
-	"../../../../../Common/MQTT-Paho/MQTTPacket/src"
-	"../../../../../Common/Nucleo/Components"
-	"../../../../../Common/Nucleo/X_NUCLEO_IKS01A2"
-	"../../../../../Common/Nucleo/X-NUCLEO-NFC01A1"
-	"../../../../../Common"
+    - "../../../../../Common/App/Inc"
+    - "../../../../../Common/App"
+    - "../../../../../Common/MQTT-Paho/MQTTClient-C/src"
+    - "../../../../../Common/MQTT-Paho/MQTTPacket/src"
+    - "../../../../../Common/Nucleo/Components"
+    - "../../../../../Common/Nucleo/X_NUCLEO_IKS01A2"
+    - "../../../../../Common/Nucleo/X-NUCLEO-NFC01A1"
+    - "../../../../../Common"
 
 - Include all the source in /Common

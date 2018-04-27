@@ -17,23 +17,25 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
   }
   else if(htim->Instance == SENSOR_TIM->Instance)
   {
-
-	BSP_ACCELERO_Get_Axes(ACCELERO_handle,&ACC_Value);
-	BSP_GYRO_Get_Axes(GYRO_handle,&GYR_Value);
-        
-        if((sensor_tim_counter % 25) == 0)
-        {
-          BSP_MAGNETO_Get_Axes(MAGNETO_handle,&MAG_Value);
-        }
-        
-        if((sensor_tim_counter % 100) == 0)
-        {
-          BSP_TEMPERATURE_Get_Temp(TEMPERATURE_handle,(float *)&TEMPERATURE_Value);
-          BSP_HUMIDITY_Get_Hum(HUMIDITY_handle,(float *)&HUMIDITY_Value);
-          BSP_PRESSURE_Get_Press(PRESSURE_handle,(float *)&PRESSURE_Value);
-        }
-
-        sensor_tim_counter++;
-       
+    
+    BSP_ACCELERO_Get_Axes(ACCELERO_handle,&ACC_Value);
+    BSP_GYRO_Get_Axes(GYRO_handle,&GYR_Value);
+    
+    if((sensor_tim_counter % 25) == 0)
+    {
+      BSP_MAGNETO_Get_Axes(MAGNETO_handle,&MAG_Value);
+    }
+    
+    if((sensor_tim_counter % 100) == 0)
+    {
+      BSP_TEMPERATURE_Get_Temp(TEMPERATURE_handle,(float *)&TEMPERATURE_Value);
+      BSP_HUMIDITY_Get_Hum(HUMIDITY_handle,(float *)&HUMIDITY_Value);
+      BSP_PRESSURE_Get_Press(PRESSURE_handle,(float *)&PRESSURE_Value);
+    }
+    
+    m1_poll_sensors();
+    
+    sensor_tim_counter++;
+    
   }
 }

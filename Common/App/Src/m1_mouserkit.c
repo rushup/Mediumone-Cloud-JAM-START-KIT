@@ -50,6 +50,7 @@ static t_aggr_int aggr_magy = {INT32_MAX,INT32_MIN,0,0};
 static t_aggr_int aggr_magz = {INT32_MAX,INT32_MIN,0,0};
 static uint32_t btn_press_count = 0;
 static uint32_t threshold_mask = 0;
+static bool pending_threshold = false;
 
 t_m1_config m1_config = {
   .rate_s = 20,
@@ -361,11 +362,9 @@ void m1_process_messages(char* json)
   
   
 }
-int m1_poll_sensors()
+
+void m1_poll_sensors()
 {
-  uint32_t l_mask = 0;
-  static bool first_poll = false;
-  
   //TEMP
   if(aggr_temperature.min > TEMPERATURE_Value)
     aggr_temperature.min = TEMPERATURE_Value;
@@ -375,17 +374,7 @@ int m1_poll_sensors()
   
   aggr_temperature.avg = (aggr_temperature.avg * aggr_temperature.avg_n + TEMPERATURE_Value) / (aggr_temperature.avg_n + 1);
   aggr_temperature.avg_n++;
-  
-  
-  if(TEMPERATURE_Value >= m1_config.max_temp)
-    l_mask |= 0x01;
-  else
-    l_mask &= ~0x01;
-  
-  if(TEMPERATURE_Value <= m1_config.min_temp)
-    l_mask |= 0x02;
-  else
-    l_mask &= ~0x02;
+
   
   //HUM
   if(aggr_humidity.min > HUMIDITY_Value)
@@ -396,17 +385,7 @@ int m1_poll_sensors()
   
   aggr_humidity.avg = (aggr_humidity.avg * aggr_humidity.avg_n + HUMIDITY_Value) / (aggr_humidity.avg_n + 1);
   aggr_humidity.avg_n++;
-  
-  if(HUMIDITY_Value >= m1_config.max_hum)
-    l_mask |= 0x02;
-  else
-    l_mask &= ~0x02;
-  
-  if(HUMIDITY_Value <= m1_config.min_hum)
-    l_mask |= 0x04;
-  else
-    l_mask &= ~0x04;
-  
+
   //PRESS
   
   if(aggr_pressure.min > PRESSURE_Value)
@@ -417,18 +396,7 @@ int m1_poll_sensors()
   
   aggr_pressure.avg = (aggr_pressure.avg * aggr_pressure.avg_n + PRESSURE_Value) / (aggr_pressure.avg_n + 1);
   aggr_pressure.avg_n++;
-  
-  if(PRESSURE_Value >= m1_config.max_press)
-    l_mask |= 0x08;
-  else
-    l_mask &= ~0x08;
-  
-  if(PRESSURE_Value <= m1_config.min_press)
-    l_mask |= 0x10;
-  else
-    l_mask &= ~0x10;
-  
-  
+
   //ACCX
   
   if(aggr_accx.min > ACC_Value.AXIS_X)
@@ -439,18 +407,7 @@ int m1_poll_sensors()
   
   aggr_accx.avg = (aggr_accx.avg * aggr_accx.avg_n + ACC_Value.AXIS_X) / (aggr_accx.avg_n + 1);
   aggr_accx.avg_n++;
-  
-  if(ACC_Value.AXIS_X > m1_config.max_accx)
-    l_mask |= 0x20;
-  else
-    l_mask &= ~0x20;
-  
-  if(ACC_Value.AXIS_X < m1_config.min_accx)
-    l_mask |= 0x40;
-  else
-    l_mask &= ~0x40;
-  
-  
+
   //ACCY
   
   if(aggr_accy.min > ACC_Value.AXIS_Y)
@@ -462,17 +419,8 @@ int m1_poll_sensors()
   
   aggr_accy.avg = (aggr_accy.avg * aggr_accy.avg_n + ACC_Value.AXIS_Y) / (aggr_accy.avg_n + 1);
   aggr_accy.avg_n++;
-  
-  if(ACC_Value.AXIS_Y > m1_config.max_accy)
-    l_mask |= 0x80;
-  else
-    l_mask &= ~0x80;
-  
-  if(ACC_Value.AXIS_Y < m1_config.min_accy)
-    l_mask |= 0x100;
-  else
-    l_mask &= ~0x100;
-  
+    
+
   //ACCZ
   
   if(aggr_accz.min > ACC_Value.AXIS_Z)
@@ -483,17 +431,7 @@ int m1_poll_sensors()
   
   aggr_accz.avg = (aggr_accz.avg * aggr_accz.avg_n + ACC_Value.AXIS_Z) / (aggr_accz.avg_n + 1);
   aggr_accz.avg_n++;
-  
-  if(ACC_Value.AXIS_Z > m1_config.max_accz)
-    l_mask |= 0x100;
-  else
-    l_mask &= ~0x100;
-  
-  if(ACC_Value.AXIS_Z < m1_config.min_accz)
-    l_mask |= 0x200;
-  else
-    l_mask &= ~0x200;
-  
+
   //GYROX
   
   if(aggr_gyrox.min > GYR_Value.AXIS_X)
@@ -504,18 +442,7 @@ int m1_poll_sensors()
   
   aggr_gyrox.avg = (aggr_gyrox.avg * aggr_gyrox.avg_n + GYR_Value.AXIS_X) / (aggr_gyrox.avg_n + 1);
   aggr_gyrox.avg_n++;
-  
-  if(GYR_Value.AXIS_X > m1_config.max_gyrox)
-    l_mask |= 0x800;
-  else
-    l_mask &= ~0x800;
-  
-  if(GYR_Value.AXIS_X < m1_config.min_gyrox)
-    l_mask |= 0x400;
-  else
-    l_mask &= ~0x400;
-  
-  
+
   //GYROY
   
   if(aggr_gyroy.min > GYR_Value.AXIS_Y)
@@ -526,17 +453,7 @@ int m1_poll_sensors()
   
   aggr_gyroy.avg = (aggr_gyroy.avg * aggr_gyroy.avg_n + GYR_Value.AXIS_Y) / (aggr_gyrox.avg_n + 1);
   aggr_gyroy.avg_n++;
-  
-  if(GYR_Value.AXIS_Y > m1_config.max_gyroy)
-    l_mask |= 0x1000;
-  else
-    l_mask &= ~0x1000;
-  
-  if(GYR_Value.AXIS_Y < m1_config.min_gyroy)
-    l_mask |= 0x2000;
-  else
-    l_mask &= ~0x2000;
-  
+
   //GYROZ
   
   if(aggr_gyroz.min > GYR_Value.AXIS_Z)
@@ -547,18 +464,6 @@ int m1_poll_sensors()
   
   aggr_gyroz.avg = (aggr_gyroz.avg * aggr_gyroz.avg_n + GYR_Value.AXIS_Z) / (aggr_gyrox.avg_n + 1);
   aggr_gyroz.avg_n++;
-  
-  if(GYR_Value.AXIS_Z > m1_config.max_gyroz)
-    l_mask |= 0x1000;
-  else
-    l_mask &= ~0x1000;
-  
-  if(GYR_Value.AXIS_Z < m1_config.min_gyroz)
-    l_mask |= 0x2000;
-  else
-    l_mask &= ~0x2000;
-  
-  
   //MAGX
   
   if(aggr_magx.min > MAG_Value.AXIS_X)
@@ -569,17 +474,7 @@ int m1_poll_sensors()
   
   aggr_magx.avg = (aggr_magx.avg * aggr_magx.avg_n + MAG_Value.AXIS_X) / (aggr_magx.avg_n + 1);
   aggr_magx.avg_n++;
-  
-  if(MAG_Value.AXIS_X > m1_config.max_magy)
-    l_mask |= 0x4000;
-  else
-    l_mask &= ~0x4000;
-  
-  if(MAG_Value.AXIS_X < m1_config.min_magx)
-    l_mask |= 0x8000;
-  else
-    l_mask &= ~0x8000;
-  
+ 
   //MAGY
   
   if(aggr_magy.min > MAG_Value.AXIS_Y)
@@ -590,17 +485,7 @@ int m1_poll_sensors()
   
   aggr_magy.avg = (aggr_magy.avg * aggr_magy.avg_n + MAG_Value.AXIS_Y) / (aggr_magy.avg_n + 1);
   aggr_magy.avg_n++;
-  
-  if(MAG_Value.AXIS_Y > m1_config.max_magy)
-    l_mask |= 0x10000;
-  else
-    l_mask &= ~0x10000;
-  
-  if(MAG_Value.AXIS_Y < m1_config.min_magx)
-    l_mask |= 0x20000;
-  else
-    l_mask &= ~0x20000;
-  
+
   //MAGZ
   
   if(aggr_magz.min > MAG_Value.AXIS_Z)
@@ -612,33 +497,160 @@ int m1_poll_sensors()
   aggr_magz.avg = (aggr_magz.avg * aggr_magz.avg_n + MAG_Value.AXIS_Z) / (aggr_magz.avg_n + 1);
   aggr_magz.avg_n++;
   
-  if(MAG_Value.AXIS_Z > m1_config.max_magz)
+  /* Check threshold */
+  
+  uint32_t l_mask = 0;
+  static bool first_poll = false;
+  
+  if(TEMPERATURE_Value >= m1_config.max_temp)
+    l_mask |= 0x01;
+  else
+    l_mask &= ~0x01;
+  
+  if(TEMPERATURE_Value <= m1_config.min_temp)
+    l_mask |= 0x02;
+  else
+    l_mask &= ~0x02;
+
+  if(HUMIDITY_Value >= m1_config.max_hum)
+    l_mask |= 0x02;
+  else
+    l_mask &= ~0x02;
+  
+  if(HUMIDITY_Value <= m1_config.min_hum)
+    l_mask |= 0x04;
+  else
+    l_mask &= ~0x04;
+  
+  if(PRESSURE_Value >= m1_config.max_press)
+    l_mask |= 0x08;
+  else
+    l_mask &= ~0x08;
+  
+  if(PRESSURE_Value <= m1_config.min_press)
+    l_mask |= 0x10;
+  else
+    l_mask &= ~0x10;
+  
+  if(ACC_Value.AXIS_X > m1_config.max_accx)
+    l_mask |= 0x20;
+  else
+    l_mask &= ~0x20;
+  
+  if(ACC_Value.AXIS_X < m1_config.min_accx)
+    l_mask |= 0x40;
+  else
+    l_mask &= ~0x40;
+  
+  if(ACC_Value.AXIS_Y > m1_config.max_accy)
+    l_mask |= 0x80;
+  else
+    l_mask &= ~0x80;
+  
+  if(ACC_Value.AXIS_Y < m1_config.min_accy)
+    l_mask |= 0x100;
+  else
+    l_mask &= ~0x100;
+  
+  if(ACC_Value.AXIS_Z > m1_config.max_accz)
+    l_mask |= 0x100;
+  else
+    l_mask &= ~0x100;
+  
+  if(ACC_Value.AXIS_Z < m1_config.min_accz)
+    l_mask |= 0x200;
+  else
+    l_mask &= ~0x200;
+  
+  if(GYR_Value.AXIS_X > m1_config.max_gyrox)
+    l_mask |= 0x800;
+  else
+    l_mask &= ~0x800;
+  
+  if(GYR_Value.AXIS_X < m1_config.min_gyrox)
+    l_mask |= 0x400;
+  else
+    l_mask &= ~0x400;
+  
+  if(GYR_Value.AXIS_Y > m1_config.max_gyroy)
+    l_mask |= 0x1000;
+  else
+    l_mask &= ~0x1000;
+  
+  if(GYR_Value.AXIS_Y < m1_config.min_gyroy)
+    l_mask |= 0x2000;
+  else
+    l_mask &= ~0x2000;
+   
+  if(GYR_Value.AXIS_Z > m1_config.max_gyroz)
+    l_mask |= 0x1000;
+  else
+    l_mask &= ~0x1000;
+  
+  if(GYR_Value.AXIS_Z < m1_config.min_gyroz)
+    l_mask |= 0x2000;
+  else
+    l_mask &= ~0x2000;
+    
+  if(MAG_Value.AXIS_X > m1_config.max_magx)
+    l_mask |= 0x4000;
+  else
+    l_mask &= ~0x4000;
+  
+  if(MAG_Value.AXIS_X < m1_config.min_magx)
+    l_mask |= 0x8000;
+  else
+    l_mask &= ~0x8000;
+
+    
+  if(MAG_Value.AXIS_Y < m1_config.min_magy)
     l_mask |= 0x10000;
   else
     l_mask &= ~0x10000;
   
-  if(MAG_Value.AXIS_Z < m1_config.min_magz)
+  if(MAG_Value.AXIS_Y > m1_config.max_magy)
     l_mask |= 0x20000;
   else
     l_mask &= ~0x20000;
+  
+  
+  if(MAG_Value.AXIS_Z < m1_config.min_magz)
+    l_mask |= 0x40000;
+  else
+    l_mask &= ~0x40000;
+  
+  if(MAG_Value.AXIS_Z > m1_config.max_magz)
+    l_mask |= 0x80000;
+  else
+    l_mask &= ~0x80000;
   
   if(first_poll == false)
   {
     first_poll = true;
     threshold_mask = l_mask;
     
-    return 0;
+    pending_threshold = false;
   }
   else
   {
     if(threshold_mask != l_mask)
     {
       threshold_mask = l_mask;
-      return 1;
+      pending_threshold = true;
     }
-    else
-      return 0;
   }
+  
+}
+
+bool m1_has_threshold()
+{
+  if(pending_threshold == true)
+  {
+    pending_threshold = false;
+    return true;
+  }
+  else
+    return false;
 }
 
 void m1_inc_btn_pres()

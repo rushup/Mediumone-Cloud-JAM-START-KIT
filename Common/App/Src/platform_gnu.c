@@ -52,10 +52,10 @@
 
 void myprintf(char * format, ...)
 {
-  char buffer[256];
+  char buffer[2048];
   va_list args;
   va_start (args, format);
-  vsnprintf (buffer, 255, format, args);
+  vsnprintf (buffer, 2047, format, args);
 
   HAL_UART_Transmit(&UartHandle, (uint8_t *)buffer, strlen(buffer), HAL_MAX_DELAY);
 

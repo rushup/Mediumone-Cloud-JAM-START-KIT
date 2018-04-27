@@ -75,7 +75,8 @@ void m1_generate_json(char* json, int size);
 void m1_process_messages(char* json);
 void m1_generate_json_aggr(char* json, int size);
 void m1_inc_btn_pres();
-int m1_poll_sensors();
+void m1_poll_sensors();
+bool m1_has_threshold();
 
 void m1_init();
 void m1_dump_parameter();

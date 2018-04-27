@@ -314,8 +314,6 @@ void app_loop()
     options.username.cstring = (char*)m1_mqtt.username;
     options.password.cstring = (char*)m1_mqtt.password;
     
-    m1_poll_sensors();
-    
     if ( (ret_code = MQTTConnect(&client, &options)) != 0){
       myprintf("\r\n [E]. Client connection with MQTT broker failed with Error Code %d \r\n", (int)ret_code);
       switch (ret_code)
@@ -411,7 +409,8 @@ void app_loop()
   case mqtt_yield:
     MQTTYield(&client, 50);
     
-    if(m1_poll_sensors() == 1 || (HAL_GetTick() - state_tick) > (m1_config.rate_s*1000))
+    /* New message if got threshold or timeout reached */
+    if(m1_has_threshold() == 1 || (HAL_GetTick() - state_tick) > (m1_config.rate_s*1000))
     {
       state_tick = HAL_GetTick();
       wifi_state = mqtt_pub;
