@@ -381,6 +381,7 @@ void app_loop()
       
       wifi_state=mqtt_yield;
       state_tick = HAL_GetTick();
+      state_tick_aggr = HAL_GetTick();
     }
     break;
     
@@ -403,7 +404,6 @@ void app_loop()
       myprintf("\r\n");
       
       wifi_state=mqtt_yield;
-      state_tick = HAL_GetTick();
     }
     break;
   case mqtt_yield:

@@ -4,8 +4,8 @@
 #include <stdint.h>
 #include <stdbool.h>
 
-#define MAX_SSID_LEN 32
-#define MAX_KEY_SIZE 64
+#define MAX_SSID_LEN 32 + 1
+#define MAX_KEY_SIZE 64 + 1
 #define MAX_MAC_SIZE 6
 
 typedef enum{

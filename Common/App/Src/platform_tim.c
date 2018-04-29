@@ -1,5 +1,6 @@
 #include "platform_tim.h"
 #include "platform_usart.h"
+#include "m1_mouserkit.h"
 #include "app.h"
 #include "tim.h"
 

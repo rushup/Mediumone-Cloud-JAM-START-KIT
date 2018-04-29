@@ -2,6 +2,7 @@
 #include <atbox/at/at.h>
 #include <string.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 #define SEND_BUF_SIZE 200
 
@@ -10,22 +11,105 @@
 /* Process commands */
 #define CMD_IDLE 0
 #define CMD_SCAN 1
-#define CMD_VERSION 2
-#define CMD_SOCKET_OPEN 3
-#define CMD_RECEIVE_DATA 4
-#define CMD_QUERY_SOCKET_DATALEN 5
-#define CMD_GET_CONFIG 6
+#define CMD_SOCKET_OPEN 2
+#define CMD_RECEIVE_DATA 3
+#define CMD_QUERY_SOCKET_DATALEN 4
+#define CMD_GET_CONFIG 5
+#define CMD_GET_STATUS 6
 #define CMD_GENERIC 200
 
 /* AT Command Matches */
 const static t_at_match res_match[] = {
-  AT_ADD_MATCH("OK\r", AT_OK)
+  AT_ADD_MATCH("OK", AT_OK)
   AT_ADD_MATCH("FAIL", AT_FAIL)
   AT_ADD_MATCH("ERROR", AT_ERROR)
   AT_ADD_MATCH("ERROR:", AT_ERROR)
   AT_ADD_MATCH("+WIND:", AT_WIND)
   {0,0}
 };
+
+static uint8_t _parse_ap(char* buff, t_wifi_ap* ap)
+{
+  char* t;
+  char * p_end;
+  int i;
+  long int ti;
+
+  t = strstr(buff, "BSS ") + strlen("BSS ");
+
+  if(t != 0)
+  {
+    for(i = 0; i < 6; i++)
+    {
+      ti = strtol (t, &p_end, 16);
+      if((*p_end == ':' && i < 5) || (*p_end == ' ' && i == 5))
+      {
+        t = p_end + 1;
+        ap->mac[i] = ti;
+      }
+      else
+        return 0;
+    }
+  }
+  else
+    return 0;
+
+  t = strstr(buff, "CHAN: ") + strlen("CHAN: ");
+  if(t != 0)
+  {
+    ti = strtol (t, &p_end, 10);
+    if(*p_end == ' ')
+    {
+      ap->channel = ti;
+    }
+    else
+      return 0;
+  }
+  else
+    return 0;
+
+  t = strstr(buff, "RSSI: ") + strlen("RSSI: ");
+  if(t != 0)
+  {
+    ti = strtol (t, &p_end, 10);
+    if(*p_end == ' ')
+    {
+      ap->rssi = ti;
+    }
+    else
+      return 0;
+  }
+  else
+    return 0;
+
+  t = strstr(buff, "SSID: '") + strlen("SSID: '");
+  if(t != 0)
+  {
+    for(i=0; i < 33; i++)
+    {
+      if(*(t+i) == '\'')
+      {
+        ap->ssid[i] = 0;
+
+        ap->sec = WIFI_SEC_OPEN;
+
+        if(strstr(t+i," WPA") != NULL)
+          ap->sec = WIFI_SEC_WPA;
+        if(strstr(t+i," WPA2") != NULL)
+          ap->sec = WIFI_SEC_WPA2;
+        if(ap->sec == WIFI_SEC_OPEN && strstr(t+i," WEP") != NULL)
+          ap->sec = WIFI_SEC_WEP;
+
+        return 1;
+      }
+      ap->ssid[i] = *(t + i);
+    }
+  }
+  else
+    return 0;
+
+  return 0;
+}
 
 void usart_fetch_byte(void* handle, char byte)
 {
@@ -38,7 +122,7 @@ void usart_fetch_byte(void* handle, char byte)
   {
     h->priv.process_buffer_out[h->priv.process_buffer_out_index++] = byte;
     
-    if(h->priv.process_buffer_out_index >= *((uint16_t*) h->priv.process_buffer_in))
+    if(h->priv.process_buffer_out_index >= h->priv.process_buffer_out_recv_len)
     {
       /* Go waiting OK */
       h->priv.process_buffer_out_index = 0;
@@ -58,30 +142,11 @@ void usart_fetch_byte(void* handle, char byte)
     case CMD_SCAN:
       if(at_ris == AT_UNKNOWN)
       {
-        asm("nop");
-        scanris = sscanf(at_get_cmd_cache(&h->priv.at_handle), "%*s %*s %hhx:%hhx:%hhx:%hhx:%hhx:%hhx %*s %hhd %*s %hd %*s '%32[^']",
-               &((t_wifi_ap*)h->priv.cb_buffer)->mac[0],
-               &((t_wifi_ap*)h->priv.cb_buffer)->mac[1],
-               &((t_wifi_ap*)h->priv.cb_buffer)->mac[2],
-               &((t_wifi_ap*)h->priv.cb_buffer)->mac[3],
-               &((t_wifi_ap*)h->priv.cb_buffer)->mac[4],
-               &((t_wifi_ap*)h->priv.cb_buffer)->mac[5],
-               &((t_wifi_ap*)h->priv.cb_buffer)->channel,
-               &((t_wifi_ap*)h->priv.cb_buffer)->rssi,
-               ((t_wifi_ap*)h->priv.cb_buffer)->ssid);
+        scanris = _parse_ap(at_get_cmd_cache(&h->priv.at_handle), (t_wifi_ap*)h->priv.cb_buffer);
         
-        if(scanris == 9)
+        if(scanris == 1)
         {
-          
-          ((t_wifi_ap*)h->priv.cb_buffer)->sec = WIFI_SEC_OPEN;
-          
-          if(strstr(at_get_cmd_cache(&h->priv.at_handle)," WPA") != NULL)
-            ((t_wifi_ap*)h->priv.cb_buffer)->sec = WIFI_SEC_WPA;
-          if(strstr(at_get_cmd_cache(&h->priv.at_handle)," WPA2") != NULL)
-            ((t_wifi_ap*)h->priv.cb_buffer)->sec = WIFI_SEC_WPA2;
-          if(((t_wifi_ap*)h->priv.cb_buffer)->sec == WIFI_SEC_OPEN && strstr(at_get_cmd_cache(&h->priv.at_handle)," WEP") != NULL)
-            ((t_wifi_ap*)h->priv.cb_buffer)->sec = WIFI_SEC_WEP;
-          
+
           ((t_wifi_ap*)h->priv.cb_buffer)->active = true;
           
           h->callbacks.event_callback(WIFI_FOUND_AP, h->priv.cb_buffer, sizeof(t_wifi_ap));
@@ -100,25 +165,35 @@ void usart_fetch_byte(void* handle, char byte)
     case CMD_SOCKET_OPEN:
       if(at_ris == AT_UNKNOWN)
       {
-        sscanf(at_get_cmd_cache(&h->priv.at_handle), " ID: %hd", (uint16_t*) h->priv.process_buffer_out);
+        /* match must be at beginning */
+        if(strstr(at_get_cmd_cache(&h->priv.at_handle), " ID: ") == at_get_cmd_cache(&h->priv.at_handle))
+        {
+          *((uint16_t*)h->priv.process_buffer_out) = atoi(at_get_cmd_cache(&h->priv.at_handle) + strlen(" ID: "));
+        }
       }
       break;
     case CMD_QUERY_SOCKET_DATALEN:
       if(at_ris == AT_UNKNOWN)
       {
-        sscanf(at_get_cmd_cache(&h->priv.at_handle), " DATALEN: %hd", (uint16_t*) h->priv.process_buffer_out);
+        if(strstr(at_get_cmd_cache(&h->priv.at_handle), " DATALEN: ") == at_get_cmd_cache(&h->priv.at_handle))
+        {
+          *((uint16_t*)h->priv.process_buffer_out) = atoi(at_get_cmd_cache(&h->priv.at_handle) + strlen(" DATALEN: "));
+        }
       }
       break;
     case CMD_GET_CONFIG:
+    case CMD_GET_STATUS:
       if(at_ris == AT_UNKNOWN)
       {
-        sscanf(at_get_cmd_cache(&h->priv.at_handle), (h->priv.process_buffer_in), (h->priv.process_buffer_out));
-      }
-      break;
-    case CMD_VERSION:
-      if(at_ris == AT_UNKNOWN)
-      {
-        sscanf(at_get_cmd_cache(&h->priv.at_handle), "# version = %24s", (h->priv.process_buffer_out));
+        if(strstr(at_get_cmd_cache(&h->priv.at_handle), h->priv.process_buffer_in) == at_get_cmd_cache(&h->priv.at_handle))
+        {
+          strncpy(h->priv.process_buffer_out, at_get_cmd_cache(&h->priv.at_handle) + strlen(h->priv.process_buffer_in), 100);
+          if(strlen(h->priv.process_buffer_out) > 2)
+          {
+            h->priv.process_buffer_out[strlen(h->priv.process_buffer_out) - 1] = 0;
+            h->priv.process_buffer_out[strlen(h->priv.process_buffer_out) - 1] = 0;
+          }
+        }
       }
       break;
     }
@@ -348,7 +423,7 @@ e_wifi_ris spwf01sa_get_config(t_wifi_spwf01sa_handle* h, const char* config, ch
   h->priv.processing_cmd_result = WIFI_TIMEOUT;
   h->callbacks.usart_send(send_buf, strlen(send_buf));;
   
-  snprintf(h->priv.process_buffer_in, sizeof(h->priv.process_buffer_out), "#  %.40s = %%%ds", config, maxlen);
+  snprintf(h->priv.process_buffer_in, sizeof(h->priv.process_buffer_out), "#  %.40s = ", config);
     
   wait_var_change(h, (char*) &h->priv.processing_cmd_result, (char*) &timeout, sizeof(h->priv.processing_cmd_result), false, 1000);
   
@@ -530,11 +605,13 @@ end:
 e_wifi_ris spwf01sa_open(t_wifi_spwf01sa_handle* h, char* remote, uint16_t port, char protocol, uint16_t* connid)
 {
   e_wifi_ris ris;
+  const uint16_t invalid_sock = 0xFFFF;
   const e_wifi_ris timeout = WIFI_TIMEOUT;
   char send_buf[SEND_BUF_SIZE];
   
   snprintf(send_buf, SEND_BUF_SIZE, "AT+S.SOCKON=%s,%d,%c\r\n", remote, port, protocol);
-  (*(uint16_t*)h->priv.process_buffer_out) = 0xFFFF;
+
+  memcpy(h->priv.process_buffer_out, &invalid_sock, sizeof(uint16_t));
   h->priv.processing_cmd = CMD_SOCKET_OPEN;
   h->priv.processing_cmd_result = WIFI_TIMEOUT;
   h->callbacks.usart_send(send_buf, strlen(send_buf));
@@ -543,9 +620,9 @@ e_wifi_ris spwf01sa_open(t_wifi_spwf01sa_handle* h, char* remote, uint16_t port,
   
   if(h->priv.processing_cmd_result == WIFI_OK)
   {
-    if((*(uint16_t*)h->priv.process_buffer_out) != 0xFFFF)
-      *connid = (*(uint16_t*)h->priv.process_buffer_out);
-    else
+    memcpy(&connid, h->priv.process_buffer_out, sizeof(uint16_t));
+
+    if(*connid == 0xFFFF)
     {
       ris = WIFI_TIMEOUT;
       goto end;
@@ -650,11 +727,13 @@ e_wifi_ris spwf01sa_recv(t_wifi_spwf01sa_handle* h, uint16_t connid, char* data,
   
   if(h->priv.processing_cmd_result == WIFI_OK)
   {
-    tmplen = *((uint16_t*)h->priv.process_buffer_out);
+    memcpy(&tmplen, h->priv.process_buffer_out, sizeof(uint16_t));
+
     if(tmplen > 0 && tmplen <= len )
     {
-      *((uint16_t*)h->priv.process_buffer_in) = tmplen;
       
+      h->priv.process_buffer_out_recv_len = tmplen;
+
       snprintf(send_buf, SEND_BUF_SIZE, "AT+S.SOCKR=%hd,%hd\r", connid, tmplen);
 
       h->priv.processing_cmd = CMD_RECEIVE_DATA;
@@ -692,23 +771,30 @@ end:
 e_wifi_ris spwf01sa_get_version(t_wifi_spwf01sa_handle* h, char* v, uint16_t max_size)
 {
   e_wifi_ris ris;
-  const int timeout = WIFI_TIMEOUT;
   char send_buf[SEND_BUF_SIZE];
-  memset(send_buf, 0, SEND_BUF_SIZE);
+  const int timeout = WIFI_TIMEOUT;
+
+  memset(h->priv.process_buffer_out, 0, sizeof(h->priv.process_buffer_out));
+  memset(h->priv.process_buffer_in, 0, sizeof(h->priv.process_buffer_in));
+
   snprintf(send_buf, SEND_BUF_SIZE, "AT+S.STS=version\r\n");
-  
-  h->priv.processing_cmd = CMD_VERSION;
+  h->priv.processing_cmd = CMD_GET_STATUS;
   h->priv.processing_cmd_result = WIFI_TIMEOUT;
-  h->callbacks.usart_send(send_buf, strlen(send_buf));
-  
-  wait_var_change(h, (char*) &h->priv.processing_cmd_result, (char*) &timeout, sizeof(h->priv.processing_cmd_result), false, 200);
-  
-  strncpy(v, h->priv.process_buffer_out, max_size);
-  
+  h->callbacks.usart_send(send_buf, strlen(send_buf));;
+
+  snprintf(h->priv.process_buffer_in, sizeof(h->priv.process_buffer_out), "#  version = ");
+
+  wait_var_change(h, (char*) &h->priv.processing_cmd_result, (char*) &timeout, sizeof(h->priv.processing_cmd_result), false, 1000);
+
+  if(h->priv.processing_cmd_result == WIFI_OK)
+  {
+    strncpy(v, h->priv.process_buffer_out, max_size);
+  }
+
   ris = h->priv.processing_cmd_result;
 
   h->priv.processing_cmd = CMD_IDLE;
-  
+
   return ris;
 }
 

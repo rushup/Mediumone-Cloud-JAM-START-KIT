@@ -32,6 +32,7 @@ typedef struct {
   char process_buffer_in[PROCESS_BUFFER_IN_SIZE];
   char process_buffer_out[PROCESS_BUFFER_OUT_SIZE];
   uint16_t process_buffer_out_index;
+  uint16_t process_buffer_out_recv_len;
   char cb_buffer[CB_BUFFER_SIZE];
   bool poweron;
   bool ready;
