@@ -6,6 +6,7 @@
 
 #define SEND_BUF_SIZE 200
 
+/* AT commands index code */
 #define AT_WIND 4
 
 /* Process commands */
@@ -27,6 +28,9 @@ const static t_at_match res_match[] = {
   AT_ADD_MATCH("+WIND:", AT_WIND)
   {0,0}
 };
+
+/* Prototypes */
+static void usart_fetch_byte(void* handle, char byte);
 
 static uint8_t _parse_ap(char* buff, t_wifi_ap* ap)
 {
@@ -111,7 +115,7 @@ static uint8_t _parse_ap(char* buff, t_wifi_ap* ap)
   return 0;
 }
 
-void usart_fetch_byte(void* handle, char byte)
+static void usart_fetch_byte(void* handle, char byte)
 {
   uint8_t scanris;
   uint16_t at_ris;
@@ -247,6 +251,10 @@ void usart_fetch_byte(void* handle, char byte)
     }
     
     at_clear_cache(&h->priv.at_handle);
+
+    /* Trigger event */
+    if(h->callbacks.os_quit_sleep != 0)
+      h->callbacks.os_quit_sleep();
   }
   
 
@@ -800,7 +808,7 @@ e_wifi_ris spwf01sa_get_version(t_wifi_spwf01sa_handle* h, char* v, uint16_t max
 
 void spwf01sa_setup(t_wifi_spwf01sa_handle* handle)
 { 
-    at_setup(&handle->priv.at_handle, "\r\n", handle->priv.at_cache, AT_CACHE_SIZE);
+    at_setup(&handle->priv.at_handle, "\r\n", handle->priv.at_cache, sizeof(handle->priv.at_cache));
 
     handle->usart_fetch_byte = usart_fetch_byte;
 

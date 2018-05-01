@@ -15,9 +15,9 @@ typedef struct {
   uint8_t (*gpio_write_reset)(bool);
   bool (*usart_send)(const char*, uint16_t);
   void (*event_callback)(e_wifi_cb, char*, uint16_t);
-  
+
   /* RTOS */
-  /* This callback is called when a new event is detected, 
+  /* This callback is called when a new event is detected,
      if the delay functions is sleeping to allow other thread to run
      this function allows to stop sleeping. ex. sleeping with WaitForEvent(timeout) */
   void (*os_quit_sleep)();
@@ -28,7 +28,7 @@ typedef struct {
   char at_cache[AT_CACHE_SIZE];
   uint8_t processing_cmd;
   e_wifi_ris processing_cmd_result;
-  
+
   char process_buffer_in[PROCESS_BUFFER_IN_SIZE];
   char process_buffer_out[PROCESS_BUFFER_OUT_SIZE];
   uint16_t process_buffer_out_index;
@@ -41,10 +41,10 @@ typedef struct {
 }t_wifi_spwf01sa_private;
 
 typedef struct {
-  
+
   t_wifi_spwf01sa_cb callbacks;
   t_wifi_spwf01sa_private priv;
-  
+
   void (*usart_fetch_byte)(void*, char);
 
 }t_wifi_spwf01sa_handle;
@@ -64,6 +64,11 @@ e_wifi_ris spwf01sa_scan(t_wifi_spwf01sa_handle* h, const char* ssid, t_wifi_ap*
 e_wifi_ris spwf01sa_factory_reset(t_wifi_spwf01sa_handle* h);
 e_wifi_ris spwf01sa_wait_ready(t_wifi_spwf01sa_handle* h);
 void spwf01sa_setup(t_wifi_spwf01sa_handle* handle);
-void usart_fetch_byte(void* handle, char byte);
+
+/* Keep private */
+#undef AT_CACHE_SIZE
+#undef CB_BUFFER_SIZE
+#undef PROCESS_BUFFER_OUT_SIZE
+#undef PROCESS_BUFFER_IN_SIZE
 
 #endif
