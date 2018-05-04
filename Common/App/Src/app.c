@@ -153,34 +153,17 @@ static bool wifi_init()
   
 redo:
   
-  ris = spwf01sa_init(&wifi_handle);
+  ris = spwf01sa_init(&wifi_handle, do_factory_reset);
   
   if(ris != WIFI_OK)
     return false;
   
-  if(do_factory_reset == true)
-  {
-    ris = spwf01sa_factory_reset(&wifi_handle);
-    if(ris == WIFI_OK)
-    {
-      printf("WiFi Factory reset successful\r\n");
-      do_factory_reset = false;
-      goto redo;
-    }
-    else
-    {
-      printf("Wifi Factory reset FAIL \r\n");
-      return ris;
-    }
-    
-  }
-
   ris = spwf01sa_wait_ready(&wifi_handle);
 
   if(ris == WIFI_TIMEOUT)
   {
     /* If other hardware have bad configuration saved, we need to reboot and send factory reset after power on*/
-    printf("WiFi HWReady not detected, trying recovery... \r\n");
+    myprintf("WiFi HWReady not detected, trying recovery... \r\n");
     do_factory_reset = true;
     
     goto redo;
@@ -204,31 +187,31 @@ void app_init()
   myprintf("**************************************************************************\r\n");
   myprintf("***                   MEDIUMONE CLOUD JAM DEMO V%d.%d                    ***\r\n", FW_VERSION, FW_SUBVERSION);
   myprintf("**************************************************************************\n\r");
-
+  
   if(nfc_init() == false)
   {
-	  myprintf("NFC Fail\r\n");
+    myprintf("NFC Fail\r\n");
   }
   else
     nfc_write_url("mediumone.com");
   
   if(sensors_init() == false)
   {
-	  myprintf("Sensors init fail \r\n");
+    myprintf("Sensors init fail \r\n");
     while(1);
   }
   
   uart_init(&uart_wifi);
   uart_init(&uart_usb);
   
-
+  
   
   if(wifi_init() == false)
   {
-	  myprintf("Wifi init fail \r\n");
+    myprintf("Wifi init fail \r\n");
     while(1);
   }
-
+  
   spwf01sa_get_config(&wifi_handle, "nv_wifi_macaddr", mac, sizeof(mac));
   
   sensors_timer_start();

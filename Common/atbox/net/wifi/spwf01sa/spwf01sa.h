@@ -56,7 +56,7 @@ e_wifi_ris spwf01sa_disconnect(t_wifi_spwf01sa_handle* h);
 e_wifi_ris spwf01sa_get_version(t_wifi_spwf01sa_handle* h, char* v, uint16_t max_size);
 e_wifi_ris spwf01sa_get_config(t_wifi_spwf01sa_handle* h, const char* config, char* value, uint16_t maxlen);
 e_wifi_ris spwf01sa_set_config(t_wifi_spwf01sa_handle* h, const char* config, const char* value);
-e_wifi_ris spwf01sa_init(t_wifi_spwf01sa_handle* h);
+e_wifi_ris spwf01sa_init(t_wifi_spwf01sa_handle* h, bool factory_reset);
 e_wifi_ris spwf01sa_open(t_wifi_spwf01sa_handle* h, char* remote, uint16_t port, char protocol, uint16_t* connid);
 e_wifi_ris spwf01sa_send(t_wifi_spwf01sa_handle* h, uint16_t conn_index, const char* data, uint16_t len);
 e_wifi_ris spwf01sa_recv(t_wifi_spwf01sa_handle* h, uint16_t connid, char* data, uint16_t len, uint16_t* recv_len);

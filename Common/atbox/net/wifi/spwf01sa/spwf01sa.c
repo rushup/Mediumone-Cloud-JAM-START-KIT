@@ -298,7 +298,7 @@ static void wifi_clear_flags(t_wifi_spwf01sa_handle* h)
   h->priv.poweron = 0;
 }
 
-e_wifi_ris spwf01sa_init(t_wifi_spwf01sa_handle* h)
+e_wifi_ris spwf01sa_init(t_wifi_spwf01sa_handle* h, bool factory_reset)
 {
   const bool c_true = true;
   bool wr = false;
@@ -306,6 +306,15 @@ e_wifi_ris spwf01sa_init(t_wifi_spwf01sa_handle* h)
   h->callbacks.gpio_write_reset(0);
   h->callbacks.delay_ms(100);
   h->callbacks.gpio_write_reset(1);
+  
+  if(factory_reset == true)
+  {
+    h->callbacks.delay_ms(5);
+    spwf01sa_factory_reset(h);
+    h->callbacks.gpio_write_reset(0);
+    h->callbacks.delay_ms(100);
+    h->callbacks.gpio_write_reset(1);
+  }
   
   wr = wait_var_change(h, (char*) &h->priv.poweron, (char*) &c_true, sizeof(bool), true, 5000);
   
@@ -383,10 +392,10 @@ e_wifi_ris spwf01sa_factory_reset(t_wifi_spwf01sa_handle* h)
   char send_buf[SEND_BUF_SIZE];
   const int timeout = WIFI_TIMEOUT;
   
-  snprintf(send_buf, SEND_BUF_SIZE, "AT&F\r\n\r\n");
+  snprintf(send_buf, SEND_BUF_SIZE, "AT&F\r\n");
   h->priv.processing_cmd = CMD_GENERIC;
   h->priv.processing_cmd_result = WIFI_TIMEOUT;
-  h->callbacks.usart_send(send_buf, strlen(send_buf));;
+  h->callbacks.usart_send(send_buf, strlen(send_buf));
     
   wait_var_change(h, (char*) &h->priv.processing_cmd_result, (char*) &timeout, sizeof(h->priv.processing_cmd_result), false, 1000);
   
