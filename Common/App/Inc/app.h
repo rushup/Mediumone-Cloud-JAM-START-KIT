@@ -12,7 +12,7 @@
 #include "sensor.h"
 
 #define FW_VERSION 0
-#define FW_SUBVERSION 13
+#define FW_SUBVERSION 14
 
 #define REDIRECT_WIFI_TO_USB 0
 

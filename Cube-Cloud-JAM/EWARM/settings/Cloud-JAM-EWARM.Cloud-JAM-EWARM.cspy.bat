@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.5\common\bin\cspybat" -f "C:\SW_FAE++\RUSHUP\JAM\2016-3020-CLOUD-JAM\CloudV3\Cube-Cloud-JAM\EWARM\settings\Cloud-JAM-EWARM.Cloud-JAM-EWARM.general.xcl" --backend -f "C:\SW_FAE++\RUSHUP\JAM\2016-3020-CLOUD-JAM\CloudV3\Cube-Cloud-JAM\EWARM\settings\Cloud-JAM-EWARM.Cloud-JAM-EWARM.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.5\common\bin\cspybat" -f "C:\SW_FAE++\RUSHUP\JAM\2016-3020-CLOUD-JAM\CloudV3\cloud-jam-cloudv3\Cube-Cloud-JAM\EWARM\settings\Cloud-JAM-EWARM.Cloud-JAM-EWARM.general.xcl" --backend -f "C:\SW_FAE++\RUSHUP\JAM\2016-3020-CLOUD-JAM\CloudV3\cloud-jam-cloudv3\Cube-Cloud-JAM\EWARM\settings\Cloud-JAM-EWARM.Cloud-JAM-EWARM.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.5\common\bin\cspybat" -f "C:\SW_FAE++\RUSHUP\JAM\2016-3020-CLOUD-JAM\CloudV3\Cube-Cloud-JAM\EWARM\settings\Cloud-JAM-EWARM.Cloud-JAM-EWARM.general.xcl" "--debug_file=%~1" --backend -f "C:\SW_FAE++\RUSHUP\JAM\2016-3020-CLOUD-JAM\CloudV3\Cube-Cloud-JAM\EWARM\settings\Cloud-JAM-EWARM.Cloud-JAM-EWARM.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.5\common\bin\cspybat" -f "C:\SW_FAE++\RUSHUP\JAM\2016-3020-CLOUD-JAM\CloudV3\cloud-jam-cloudv3\Cube-Cloud-JAM\EWARM\settings\Cloud-JAM-EWARM.Cloud-JAM-EWARM.general.xcl" "--debug_file=%~1" --backend -f "C:\SW_FAE++\RUSHUP\JAM\2016-3020-CLOUD-JAM\CloudV3\cloud-jam-cloudv3\Cube-Cloud-JAM\EWARM\settings\Cloud-JAM-EWARM.Cloud-JAM-EWARM.driver.xcl" 
 
 @echo off 
 :end

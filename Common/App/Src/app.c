@@ -185,7 +185,7 @@ void app_init()
   
   myprintf("\033[2J\033[0;0H******************************************************************************\r\n\n\r");
   myprintf("**************************************************************************\r\n");
-  myprintf("***                   MEDIUMONE CLOUD JAM DEMO V%d.%d                    ***\r\n", FW_VERSION, FW_SUBVERSION);
+  myprintf("***                   MEDIUMONE CLOUD JAM DEMO V%d.%d                   ***\r\n", FW_VERSION, FW_SUBVERSION);
   myprintf("**************************************************************************\n\r");
   
   if(nfc_init() == false)

@@ -52,12 +52,12 @@ typedef struct{
   uint8_t pub_topic[128];  /**< topic to publish */
   uint8_t sub_topic[128];  /**< topic to subscribe */
   uint8_t clientid[64];    /**< topic to publish */
-  enum QoS qos;            /**< Quality of service parameter for MQTT connection to IBM Watson IOT platform service */
-  uint8_t username[64];    /**< "use-token-auth"*/
-	uint8_t password[64];    /**< secret token generated (or the one you passed) while registering your device wih â€œIBM Watson IOT Platformâ€� service  */
-	uint8_t hostname[64];    /**< your_ibm_org_id."messaging.internetofthings.ibmcloud.com"  */
-  uint8_t device_type[64]; /**< device type in IBM Watson IOT platform service */
-  uint8_t org_id[64];      /**< org id in IBM Watson */
+  enum QoS qos;            /**< Quality of service parameter for MQTT connection  */
+  uint8_t username[64];
+	uint8_t password[64];
+	uint8_t hostname[64];
+  uint8_t device_type[64];
+  uint8_t org_id[64];
   uint32_t port;           /**< TCP port */
   uint8_t protocol;        /**<t -> tcp , s-> secure tcp, c-> secure tcp + certificates */
 }t_m1_mqtt;

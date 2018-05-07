@@ -69,6 +69,8 @@
 #define WIFI_TX_GPIO_Port GPIOA
 #define WIFI_RX_Pin GPIO_PIN_10
 #define WIFI_RX_GPIO_Port GPIOA
+#define WIFI_RTS_Pin GPIO_PIN_12
+#define WIFI_RTS_GPIO_Port GPIOA
 #define WIFI_RST_Pin GPIO_PIN_12
 #define WIFI_RST_GPIO_Port GPIOC
 #define WIFI_BLUE_LED_Pin GPIO_PIN_2

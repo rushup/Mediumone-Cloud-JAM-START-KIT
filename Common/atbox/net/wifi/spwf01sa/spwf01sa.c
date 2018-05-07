@@ -309,7 +309,7 @@ e_wifi_ris spwf01sa_init(t_wifi_spwf01sa_handle* h, bool factory_reset)
   
   if(factory_reset == true)
   {
-    h->callbacks.delay_ms(5);
+    h->callbacks.delay_ms(1000);
     spwf01sa_factory_reset(h);
     h->callbacks.gpio_write_reset(0);
     h->callbacks.delay_ms(100);

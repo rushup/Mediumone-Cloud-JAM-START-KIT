@@ -322,12 +322,12 @@
           <state>$PROJ_DIR$/../Drivers/CMSIS/Device/ST/STM32L4xx/Include</state>
           <state>$PROJ_DIR$/../Drivers/CMSIS/Include</state>
           <state>$PROJ_DIR$\..\..\Common\App\Inc</state>
-          <state>C:\SW_FAE++\RUSHUP\JAM\2016-3020-CLOUD-JAM\CloudV3\Common</state>
           <state>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTClient-C\src</state>
           <state>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src</state>
           <state>$PROJ_DIR$\..\..\Common\Nucleo\Components</state>
           <state>$PROJ_DIR$\..\..\Common\Nucleo\X_NUCLEO_IKS01A2</state>
           <state>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1</state>
+          <state>$PROJ_DIR$\..\..\Common</state>
         </option>
         <option>
           <name>CCStdIncCheck</name>
@@ -619,7 +619,7 @@
         </option>
         <option>
           <name>OOCOutputFile</name>
-          <state>Cloud-JAM-L4-EWARM.srec</state>
+          <state>Project.srec</state>
         </option>
         <option>
           <name>OOCCommandLineProducer</name>
@@ -1100,7 +1100,7 @@
       </file>
     </group>
     <group>
-      <name>Nucleo</name>
+      <name>NUCLEO</name>
       <file>
         <name>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\drv_I2C_M24SR.c</name>
       </file>

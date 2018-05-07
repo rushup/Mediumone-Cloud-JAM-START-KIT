@@ -20,10 +20,9 @@ typedef struct{
 
 typedef struct{
   char* cache_cmd;
-  uint32_t max_cache_size;
+  uint32_t cache_size;
   uint32_t cache_index;
   uint16_t m_index;
-  bool parsing_on;
   const char* endline;
   uint8_t endline_len;
 }t_at_private;

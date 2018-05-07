@@ -2,449 +2,426 @@
 
 <project>
   <fileVersion>2</fileVersion>
-  <fileChecksum>3230244087</fileChecksum>
+  <fileChecksum>569098457</fileChecksum>
   <configuration>
     <name>Cloud-JAM-EWARM</name>
     <outputs>
       <file>$PROJ_DIR$\..\Src\i2c.c</file>
-      <file>$PROJ_DIR$\..\Src\stm32f4xx_hal_msp.c</file>
       <file>$PROJ_DIR$\..\Src\main.c</file>
-      <file>$PROJ_DIR$\..\Src\stm32f4xx_it.c</file>
-      <file>$PROJ_DIR$\..\Src\dma.c</file>
       <file>$PROJ_DIR$\..\Src\gpio.c</file>
-      <file>$PROJ_DIR$\..\Src\crc.c</file>
-      <file>$PROJ_DIR$\startup_stm32f401xe.s</file>
-      <file>$PROJ_DIR$\..\..\Common\App\Src\app.c</file>
       <file>$PROJ_DIR$\..\..\Common\App\Src\m1_mouserkit.c</file>
-      <file>$PROJ_DIR$\..\..\Common\App\Src\parson.c</file>
-      <file>$PROJ_DIR$\..\..\Common\App\Src\platform_iks01a2.c</file>
       <file>$PROJ_DIR$\..\..\Common\App\Src\platform_gnu.c</file>
       <file>$PROJ_DIR$\..\..\Common\App\Src\platform_tim.c</file>
+      <file>$PROJ_DIR$\..\..\Common\App\Src\platform_iks01a2.c</file>
+      <file>$PROJ_DIR$\..\..\Common\App\Src\app.c</file>
+      <file>$PROJ_DIR$\..\..\Common\App\Src\parson.c</file>
       <file>$PROJ_DIR$\..\..\Common\App\Src\platform_usart.c</file>
       <file>$PROJ_DIR$\..\..\Common\App\Src\platform_usb.c</file>
       <file>$PROJ_DIR$\..\..\Common\App\Src\platform_mqtt.c</file>
       <file>$PROJ_DIR$\..\..\Common\App\Src\platform_wifi.c</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\MQTTSerializePublish.pbi</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\x_nucleo_iks01a2_magneto.pbi</file>
-      <file>$PROJ_DIR$\..\..\Common\App\Inc\platform_gnu.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\MQTTDeserializePublish.o</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\MQTTUnsubscribeServer.pbi</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\x_nucleo_iks01a2_humidity.o</file>
-      <file>$PROJ_DIR$\..\..\Common\App\Inc\app.h</file>
-      <file>$PROJ_DIR$\..\..\Common\App\Inc\platform_mqtt.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\MQTTConnectServer.pbi</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\MQTTUnsubscribeClient.o</file>
-      <file>$PROJ_DIR$\..\Inc\stm32f4xx_it.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\MQTTSubscribeClient.pbi</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\MQTTUnsubscribeServer.o</file>
-      <file>$PROJ_DIR$\..\..\Common\atbox\net\wifi\spwf01sa\spwf01sa.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\x_nucleo_iks01a2_temperature.pbi</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\x_nucleo_iks01a2_gyro.pbi</file>
-      <file>$PROJ_DIR$\..\..\Common\App\Inc\platform_wifi.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\MQTTUnsubscribeClient.pbi</file>
-      <file>$PROJ_DIR$\..\..\Common\App\Inc\m1_mouserkit.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\x_nucleo_iks01a2_temperature.o</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\x_nucleo_iks01a2_humidity.pbi</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\MQTTSubscribeServer.pbi</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\MQTTFormat.pbi</file>
-      <file>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTClient-C\src\MQTTClient.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\MQTTPacket.o</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\MQTTSerializePublish.o</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\x_nucleo_iks01a2_accelero.o</file>
-      <file>$TOOLKIT_DIR$\inc\c\stdarg.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\MQTTConnectClient.o</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\LSM6DSL_ACC_GYRO_driver.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\spwf01sa.pbi</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\x_nucleo_iks01a2_pressure.o</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_crc.o</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_pwr.o</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\dma.pbi</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_msp.pbi</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_dma_ex.pbi</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_dma.o</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_tim.pbi</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_flash_ramfunc.o</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_cortex.pbi</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_rcc_ex.pbi</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_rcc_ex.o</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\x_nucleo_iks01a2_accelero.pbi</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\crc.pbi</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_rcc.o</file>
-      <file>$TOOLKIT_DIR$\inc\c\xtgmath.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_flash_ex.pbi</file>
-      <file>$TOOLKIT_DIR$\inc\c\wchar.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\i2c.pbi</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_crc.pbi</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_i2c_ex.pbi</file>
-      <file>$TOOLKIT_DIR$\inc\c\math.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\usart.pbi</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_tim_ex.pbi</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\system_stm32f4xx.pbi</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_tim.o</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_flash_ex.o</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_rcc.pbi</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Exe\Cloud-JAM-EWARM.bin</file>
-      <file>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src\StackTrace.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\x_nucleo_iks01a2_gyro.o</file>
+      <file>$PROJ_DIR$\startup_stm32f401xe.s</file>
+      <file>$PROJ_DIR$\..\Src\crc.c</file>
+      <file>$PROJ_DIR$\..\Src\dma.c</file>
       <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\sensor.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\MQTTConnectServer.o</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\humidity.h</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\component.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\locale.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_flash_ex.o</file>
       <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\temperature.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\MQTTFormat.o</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_rcc.pbi</file>
+      <file>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src\StackTrace.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\usart.pbi</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Exe\Cloud-JAM-EWARM.bin</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_tim.o</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\component.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\wchar.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_crc.pbi</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\x_nucleo_iks01a2_gyro.o</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\MQTTConnectServer.o</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_tim_ex.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\locale.h</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\humidity.h</file>
       <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\MQTTConnectClient.pbi</file>
-      <file>$PROJ_DIR$\..\Inc\i2c.h</file>
-      <file>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src\MQTTConnect.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\MQTTDeserializePublish.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\math.h</file>
       <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\MQTTSubscribeServer.o</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\MQTTPacket.pbi</file>
+      <file>$PROJ_DIR$\..\..\Common\App\Inc\parson.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\system_stm32f4xx.pbi</file>
+      <file>$PROJ_DIR$\..\Inc\i2c.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_flash_ex.pbi</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\i2c.pbi</file>
+      <file>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src\MQTTConnect.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_i2c_ex.pbi</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\MQTTDeserializePublish.pbi</file>
       <file>$PROJ_DIR$\..\..\Common\App\Inc\platform_iks01a2.h</file>
       <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\x_nucleo_iks01a2_magneto.o</file>
       <file>$PROJ_DIR$\..\Inc\tim.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\MQTTFormat.o</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\MQTTPacket.pbi</file>
       <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\x_nucleo_iks01a2_pressure.pbi</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\MQTTClient.o</file>
-      <file>$PROJ_DIR$\..\Inc\dma.h</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\HTS221_Driver.h</file>
       <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\HTS221_Driver_HL.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\tim.o</file>
-      <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
-      <file>$PROJ_DIR$\..\Inc\stm32f4xx_hal_conf.h</file>
-      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_NDEF_SMS.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\i2c.o</file>
-      <file>$PROJ_DIR$\..\Drivers\CMSIS\Include\core_cmSimd.h</file>
-      <file>$PROJ_DIR$\..\Drivers\CMSIS\Include\core_cmInstr.h</file>
       <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\IIS2DH_Driver_HL.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\LSM303AGR_MAG_driver_HL.o</file>
-      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2c_ex.h</file>
-      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\LPS22HB_Driver.h</file>
-      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ramfunc.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\cmsis_iar.h</file>
       <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h</file>
       <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_pwr_ex.o</file>
-      <file>$TOOLKIT_DIR$\inc\c\ystdio.h</file>
       <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\lib_NDEF_Vcard.o</file>
+      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ramfunc.h</file>
+      <file>$PROJ_DIR$\..\Drivers\CMSIS\Include\core_cmInstr.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\cmsis_iar.h</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\HTS221_Driver.h</file>
+      <file>$PROJ_DIR$\..\Inc\stm32f4xx_hal_conf.h</file>
+      <file>$PROJ_DIR$\..\Inc\dma.h</file>
+      <file>$PROJ_DIR$\..\Drivers\CMSIS\Include\core_cmSimd.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\LSM303AGR_MAG_driver_HL.o</file>
       <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h</file>
-      <file>$PROJ_DIR$\..\..\Common\App\Inc\parson.h</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\LPS22HB_Driver.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\MQTTClient.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\ystdio.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\tim.o</file>
       <file>$TOOLKIT_DIR$\lib\dl7M_tlf.a</file>
-      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\lib_NDEF_Email.pbi</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\MQTTSubscribeClient.o</file>
-      <file>$PROJ_DIR$\..\Inc\main.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\HTS221_Driver_HL.o</file>
-      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
-      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h</file>
-      <file>$PROJ_DIR$\..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\i2c.o</file>
+      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h</file>
+      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2c_ex.h</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_NDEF_SMS.h</file>
+      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
       <file>$PROJ_DIR$\..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\usart.o</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\LSM6DSL_ACC_GYRO_driver_HL.pbi</file>
       <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\lib_NDEF_MyApp.pbi</file>
       <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\lib_NDEF_SMS.pbi</file>
-      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
-      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\lib_ISO7816_Password.o</file>
+      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h</file>
+      <file>$PROJ_DIR$\..\Inc\main.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\errno.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\lib_NDEF_Vcard.pbi</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\lib_NDEF_Email.pbi</file>
+      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h</file>
+      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\usart.o</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\LSM6DSL_ACC_GYRO_driver_HL.pbi</file>
       <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h</file>
       <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\lib_NDEF_Wifi.pbi</file>
       <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\lib_NDEF_Geo.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
       <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Full.h</file>
       <file>$PROJ_DIR$\stm32f401xe_flash.icf</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\m24sr.pbi</file>
+      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h</file>
       <file>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_NDEF.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\lib_NDEF_Vcard.pbi</file>
       <file>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\drv_I2C_M24SR.h</file>
       <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\lib_NDEF_MyApp.o</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\lib_ISO7816_Password.o</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\m24sr.pbi</file>
       <file>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_wrapper.h</file>
-      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h</file>
       <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\lib_NDEF_Wifi.o</file>
-      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Exe\Cloud-JAM-EWARM.out</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\lib_NDEF_AAR.o</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\lib_TagType4.o</file>
-      <file>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src\MQTTPublish.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\at.pbi</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\app.o</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\platform_wifi.pbi</file>
-      <file>$TOOLKIT_DIR$\inc\c\xlocale.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\lib_TagType4.pbi</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\drv_I2C_M24SR.pbi</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\magnetometer.h</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\gyroscope.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\LSM303AGR_ACC_driver.pbi</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_NDEF_Wifi.h</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\LSM6DSL_ACC_GYRO_driver_HL.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\lib_NDEF_Email.o</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\LSM303AGR_MAG_driver.h</file>
-      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h</file>
-      <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_NDEF_Email.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\MQTTSubscribeClient.o</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\HTS221_Driver_HL.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+      <file>$PROJ_DIR$\..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h</file>
       <file>$TOOLKIT_DIR$\inc\c\ymath.h</file>
       <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\lib_STProprietary_feature.pbi</file>
       <file>$PROJ_DIR$\..\..\Common\Nucleo\X_NUCLEO_IKS01A2\x_nucleo_iks01a2_magneto.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\lib_TagType4.pbi</file>
+      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h</file>
       <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\lib_NDEF_URI.pbi</file>
       <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
       <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\app.pbi</file>
-      <file>$TOOLKIT_DIR$\inc\c\errno.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\platform_tim.o</file>
+      <file>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src\MQTTPublish.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Exe\Cloud-JAM-EWARM.out</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\at.pbi</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\magnetometer.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\app.o</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\lib_NDEF_AAR.o</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\lib_TagType4.o</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\platform_wifi.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\xlocale.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\LSM303AGR_ACC_driver.pbi</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\LSM6DSL_ACC_GYRO_driver_HL.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\lib_NDEF_Email.o</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\gyroscope.h</file>
+      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_NDEF_Wifi.h</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\LSM303AGR_MAG_driver.h</file>
+      <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\drv_I2C_M24SR.pbi</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_NDEF_Email.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\float.h</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_STProprietary_feature.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\platform_mqtt.o</file>
       <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\platform_gnu.o</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\spwf01sa.o</file>
-      <file>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src\MQTTSubscribe.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\platform_usart.pbi</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_NDEF_AAR.h</file>
-      <file>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src\MQTTPacket.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_i2c.o</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\X_NUCLEO_IKS01A2\x_nucleo_iks01a2_pressure.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\parson.o</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\X_NUCLEO_IKS01A2\x_nucleo_iks01a2_accelero.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\platform_usb.pbi</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_flash_ramfunc.pbi</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_flash.o</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_ISO7816_Password.h</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\LPS22HB_Driver_HL.h</file>
       <file>$PROJ_DIR$\..\..\Common\Nucleo\X_NUCLEO_IKS01A2\x_nucleo_iks01a2_temperature.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\m1_mouserkit.pbi</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\platform_usb.o</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_NDEF_AAR.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\platform_iks01a2.o</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\pressure.h</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\X_NUCLEO_IKS01A2\x_nucleo_iks01a2_accelero.h</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\LPS22HB_Driver_HL.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\spwf01sa.o</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_flash_ramfunc.pbi</file>
       <file>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_TagType4.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\platform_usart.pbi</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\X_NUCLEO_IKS01A2\x_nucleo_iks01a2_pressure.h</file>
+      <file>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src\MQTTPacket.h</file>
+      <file>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src\MQTTSubscribe.h</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_ISO7816_Password.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\m1_mouserkit.pbi</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\platform_tim.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_i2c.o</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\platform_usb.pbi</file>
       <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\at.o</file>
       <file>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src\MQTTFormat.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\platform_usb.o</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\parson.o</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_flash.o</file>
       <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\platform_tim.pbi</file>
       <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\parson.pbi</file>
       <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_gpio.o</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_STProprietary_feature.h</file>
       <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\LSM303AGR_MAG_driver_HL.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\float.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\platform_mqtt.o</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\platform_iks01a2.o</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\platform_wifi.o</file>
-      <file>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src\MQTTUnsubscribe.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\platform_usart.o</file>
-      <file>$TOOLKIT_DIR$\inc\c\ctype.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\Cloud-JAM-EWARM.pbd</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_uart.o</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_it.o</file>
-      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_msp.o</file>
       <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal.o</file>
-      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc_ex.h</file>
-      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\X_NUCLEO_IKS01A2\x_nucleo_iks01a2_gyro.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_cortex.o</file>
-      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_dma.pbi</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\dma.o</file>
-      <file>$PROJ_DIR$\..\Drivers\CMSIS\Include\core_cmFunc.h</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\LSM303AGR_ACC_driver_HL.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\platform_gnu.pbi</file>
-      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\crc.o</file>
-      <file>$PROJ_DIR$\..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xe.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_uart.o</file>
       <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\platform_iks01a2.pbi</file>
       <file>$TOOLKIT_DIR$\inc\c\xlocalelist.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_it.o</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\crc.o</file>
       <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\pressure.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\m1_mouserkit.o</file>
-      <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
-      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_crc.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\platform_mqtt.pbi</file>
-      <file>$PROJ_DIR$\..\Drivers\CMSIS\Include\core_cm4.h</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\LSM303AGR_ACC_driver.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\main.pbi</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_flash.pbi</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_gpio.pbi</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\X_NUCLEO_IKS01A2\x_nucleo_iks01a2_humidity.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_dma_ex.o</file>
-      <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\gpio.o</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal.pbi</file>
-      <file>$TOOLKIT_DIR$\inc\c\string.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_pwr_ex.pbi</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\startup_stm32f401xe.o</file>
-      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_tim_ex.o</file>
-      <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_pwr.pbi</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\gpio.pbi</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_it.pbi</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\tim.pbi</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\system_stm32f4xx.o</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_i2c.pbi</file>
-      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2c.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\xmtx.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\platform_gnu.pbi</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_dma.pbi</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_msp.o</file>
+      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio.h</file>
+      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h</file>
+      <file>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src\MQTTUnsubscribe.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_cortex.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\ctype.h</file>
+      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc_ex.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\Cloud-JAM-EWARM.pbd</file>
+      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\LSM303AGR_ACC_driver_HL.h</file>
+      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h</file>
+      <file>$PROJ_DIR$\..\Drivers\CMSIS\Include\core_cmFunc.h</file>
+      <file>$PROJ_DIR$\..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xe.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\platform_usart.o</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\X_NUCLEO_IKS01A2\x_nucleo_iks01a2_gyro.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\platform_wifi.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\dma.o</file>
+      <file>$PROJ_DIR$\..\..\Common\App\Inc\platform_usb.h</file>
       <file>$PROJ_DIR$\..\Inc\crc.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_uart.pbi</file>
-      <file>$TOOLKIT_DIR$\inc\c\xlocale_lconv.h</file>
+      <file>$PROJ_DIR$\..\..\Common\atbox\at\at.h</file>
+      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2c.h</file>
       <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_i2c_ex.o</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\main.o</file>
       <file>$TOOLKIT_DIR$\inc\c\xtls.h</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_NDEF_SMS.c</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_NDEF_Geo.c</file>
-      <file>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src\MQTTSubscribeServer.c</file>
-      <file>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src\MQTTFormat.c</file>
-      <file>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src\MQTTDeserializePublish.c</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\HTS221_Driver.c</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_NDEF_URI.c</file>
-      <file>$PROJ_DIR$\..\Src\tim.c</file>
-      <file>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src\MQTTPacket.c</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\IIS2DH_Driver.c</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_NDEF_Vcard.c</file>
-      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c.c</file>
-      <file>$PROJ_DIR$\..\Src\usart.c</file>
-      <file>$PROJ_DIR$\..\..\Common\atbox\at\at.c</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_ISO7816_Password.c</file>
-      <file>$PROJ_DIR$\..\Src\system_stm32f4xx.c</file>
-      <file>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src\MQTTConnectClient.c</file>
-      <file>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src\MQTTUnsubscribeServer.c</file>
-      <file>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src\MQTTSubscribeClient.c</file>
-      <file>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src\MQTTUnsubscribeClient.c</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\drv_I2C_M24SR.c</file>
-      <file>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src\MQTTSerializePublish.c</file>
-      <file>$PROJ_DIR$\..\..\Common\atbox\net\wifi\spwf01sa\spwf01sa.c</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_NDEF.c</file>
-      <file>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src\MQTTConnectServer.c</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_NDEF_AAR.c</file>
-      <file>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTClient-C\src\MQTTClient.c</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\lib_M24SR.c</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_NDEF_Email.c</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_NDEF_MyApp.c</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\IIS2DH_Driver_HL.c</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\HTS221_Driver_HL.c</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\LPS22HB_Driver_HL.c</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\LSM303AGR_ACC_driver.c</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\m24sr.c</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\X_NUCLEO_IKS01A2\x_nucleo_iks01a2_gyro.c</file>
-      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.c</file>
-      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash.c</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\X_NUCLEO_IKS01A2\x_nucleo_iks01a2_accelero.c</file>
-      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ramfunc.c</file>
-      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c</file>
-      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\LSM6DSL_ACC_GYRO_driver_HL.c</file>
-      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c</file>
-      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\LPS22HB_Driver.c</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\LSM303AGR_ACC_driver_HL.c</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\X_NUCLEO_IKS01A2\x_nucleo_iks01a2_humidity.c</file>
-      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_crc.c</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_STProprietary_feature.c</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_TagType4.c</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_NDEF_Wifi.c</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\LSM303AGR_MAG_driver.c</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\LSM6DSL_ACC_GYRO_driver.c</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\X_NUCLEO_IKS01A2\x_nucleo_iks01a2_magneto.c</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\X_NUCLEO_IKS01A2\x_nucleo_iks01a2_pressure.c</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\X_NUCLEO_IKS01A2\x_nucleo_iks01a2_temperature.c</file>
-      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.c</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\LSM303AGR_MAG_driver_HL.c</file>
       <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\accelerometer.h</file>
       <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\LSM6DSL_ACC_GYRO_driver.o</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\IIS2DH_Driver.o</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_NDEF_MyApp.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\LSM6DSL_ACC_GYRO_driver_HL.o</file>
       <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\lib_NDEF.o</file>
       <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\LSM303AGR_MAG_driver_HL.pbi</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\List\Cloud-JAM-EWARM.map</file>
+      <file>$TOOLKIT_DIR$\inc\c\xlocale_lconv.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\MQTTClient.pbi</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_uart.pbi</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\main.o</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\IIS2DH_Driver.o</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_NDEF_MyApp.h</file>
       <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\lib_NDEF_URI.o</file>
       <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\lib_NDEF_Geo.o</file>
       <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\lib_NDEF_SMS.o</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\LPS22HB_Driver_HL.o</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\MQTTClient.pbi</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\LSM6DSL_ACC_GYRO_driver_HL.o</file>
       <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\LPS22HB_Driver_HL.pbi</file>
       <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\LSM303AGR_ACC_driver.o</file>
       <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\lib_M24SR.h</file>
       <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\LSM303AGR_ACC_driver_HL.o</file>
       <file>$PROJ_DIR$\..\..\Common\App\Inc\platform_tim.h</file>
       <file>$PROJ_DIR$\..\Inc\gpio.h</file>
-      <file>$PROJ_DIR$\..\..\Common\App\Inc\platform_usart.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\List\Cloud-JAM-EWARM.map</file>
       <file>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_NDEF_URI.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xmtx.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\LPS22HB_Driver_HL.o</file>
+      <file>$PROJ_DIR$\..\..\Common\App\Inc\platform_usart.h</file>
       <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\IIS2DH_Driver_HL.o</file>
-      <file>$PROJ_DIR$\..\..\Common\App\Inc\platform_usb.h</file>
-      <file>$PROJ_DIR$\..\..\Common\atbox\at\at.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_dma_ex.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_pwr_ex.pbi</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\gpio.o</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_crc.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\platform_mqtt.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\m1_mouserkit.o</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_gpio.pbi</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\startup_stm32f401xe.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\LSM303AGR_ACC_driver.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_pwr.pbi</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_tim_ex.o</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\gpio.pbi</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\main.pbi</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\tim.pbi</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_it.pbi</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\X_NUCLEO_IKS01A2\x_nucleo_iks01a2_humidity.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_flash.pbi</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\system_stm32f4xx.o</file>
+      <file>$PROJ_DIR$\..\Drivers\CMSIS\Include\core_cm4.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_i2c.pbi</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_NDEF_Geo.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\IIS2DH_Driver_HL.pbi</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\lib_NDEF_AAR.pbi</file>
       <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\lib_M24SR.o</file>
       <file>$PROJ_DIR$\..\..\Common\atbox\net\wifi\wifi_base.h</file>
-      <file>$PROJ_DIR$\..\Inc\usart.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\LPS22HB_Driver.o</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\LPS22HB_Driver.pbi</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\HTS221_Driver.o</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\m24sr.o</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\lib_NDEF_AAR.pbi</file>
-      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c</file>
-      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim.c</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\IIS2DH_Driver_HL.pbi</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\IIS2DH_Driver.h</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\IIS2DH_Driver.pbi</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\LSM303AGR_ACC_driver_HL.pbi</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\lib_ISO7816_Password.pbi</file>
       <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\lib_STProprietary_feature.o</file>
-      <file>$TOOLKIT_DIR$\lib\m7M_tls.a</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\m24sr.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\LSM303AGR_MAG_driver.pbi</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\IIS2DH_Driver.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\LSM6DSL_ACC_GYRO_driver.pbi</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\LSM303AGR_ACC_driver_HL.pbi</file>
       <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\HTS221_Driver.pbi</file>
-      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\HTS221_Driver_HL.pbi</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\HTS221_Driver.o</file>
       <file>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_NDEF_Vcard.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\lib_ISO7816_Password.pbi</file>
+      <file>$TOOLKIT_DIR$\lib\m7M_tls.a</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\LPS22HB_Driver.pbi</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\m24sr.h</file>
       <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\lib_M24SR.pbi</file>
       <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\LSM303AGR_MAG_driver.o</file>
-      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c</file>
-      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\HTS221_Driver_HL.pbi</file>
-      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c</file>
       <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\lib_NDEF.pbi</file>
-      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim_ex.c</file>
       <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\drv_I2C_M24SR.o</file>
-      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c_ex.c</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\LSM303AGR_MAG_driver.pbi</file>
+      <file>$PROJ_DIR$\..\Inc\usart.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\IIS2DH_Driver.pbi</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\LPS22HB_Driver.o</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\m24sr.o</file>
       <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
-      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\LSM6DSL_ACC_GYRO_driver.pbi</file>
-      <file>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_NDEF_Geo.h</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\lib_M24SR.c</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_NDEF_Email.c</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_NDEF_Geo.c</file>
+      <file>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src\MQTTFormat.c</file>
+      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.c</file>
+      <file>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src\MQTTSubscribeServer.c</file>
+      <file>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src\MQTTUnsubscribeClient.c</file>
+      <file>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src\MQTTPacket.c</file>
+      <file>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src\MQTTSerializePublish.c</file>
+      <file>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTClient-C\src\MQTTClient.c</file>
+      <file>$PROJ_DIR$\..\Src\stm32f4xx_hal_msp.c</file>
+      <file>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src\MQTTConnectServer.c</file>
+      <file>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src\MQTTSubscribeClient.c</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\HTS221_Driver.c</file>
+      <file>$PROJ_DIR$\..\..\Common\atbox\at\at.c</file>
+      <file>$PROJ_DIR$\..\Src\usart.c</file>
+      <file>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src\MQTTConnectClient.c</file>
+      <file>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src\MQTTUnsubscribeServer.c</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\IIS2DH_Driver.c</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_ISO7816_Password.c</file>
+      <file>$PROJ_DIR$\..\Src\stm32f4xx_it.c</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_NDEF.c</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_NDEF_AAR.c</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_NDEF_MyApp.c</file>
+      <file>$PROJ_DIR$\..\Src\system_stm32f4xx.c</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_NDEF_SMS.c</file>
+      <file>$PROJ_DIR$\..\Src\tim.c</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\drv_I2C_M24SR.c</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\IIS2DH_Driver_HL.c</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\HTS221_Driver_HL.c</file>
+      <file>$PROJ_DIR$\..\..\Common\atbox\net\wifi\spwf01sa\spwf01sa.c</file>
+      <file>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src\MQTTDeserializePublish.c</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_NDEF_Wifi.c</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\m24sr.c</file>
+      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\LSM303AGR_ACC_driver_HL.c</file>
+      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash.c</file>
+      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ramfunc.c</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_NDEF_Vcard.c</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_STProprietary_feature.c</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\LPS22HB_Driver.c</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_TagType4.c</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\X_NUCLEO_IKS01A2\x_nucleo_iks01a2_gyro.c</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\X_NUCLEO_IKS01A2\x_nucleo_iks01a2_accelero.c</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\LPS22HB_Driver_HL.c</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\X_NUCLEO_IKS01A2\x_nucleo_iks01a2_humidity.c</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\X_NUCLEO_IKS01A2\x_nucleo_iks01a2_temperature.c</file>
+      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\X_NUCLEO_IKS01A2\x_nucleo_iks01a2_pressure.c</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\X_NUCLEO_IKS01A2\x_nucleo_iks01a2_magneto.c</file>
+      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\LSM303AGR_MAG_driver_HL.c</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\LSM6DSL_ACC_GYRO_driver_HL.c</file>
+      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_crc.c</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_NDEF_URI.c</file>
+      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.c</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\LSM303AGR_ACC_driver.c</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\LSM303AGR_MAG_driver.c</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\LSM6DSL_ACC_GYRO_driver.c</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_dma.o</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_tim.pbi</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_flash_ramfunc.o</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_rcc_ex.o</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_cortex.pbi</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_dma_ex.pbi</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_crc.o</file>
+      <file>$PROJ_DIR$\..\..\Common\App\Inc\m1_mouserkit.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\MQTTPacket.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdarg.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\MQTTSerializePublish.o</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\MQTTConnectClient.o</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_pwr.o</file>
+      <file>$PROJ_DIR$\..\..\Common\App\Inc\platform_wifi.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\x_nucleo_iks01a2_accelero.pbi</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\x_nucleo_iks01a2_temperature.pbi</file>
+      <file>$PROJ_DIR$\..\..\Common\Nucleo\Components\LSM6DSL_ACC_GYRO_driver.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\crc.pbi</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_rcc.o</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_rcc_ex.pbi</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\MQTTUnsubscribeClient.pbi</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\x_nucleo_iks01a2_accelero.o</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\dma.pbi</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\x_nucleo_iks01a2_humidity.pbi</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\stm32f4xx_hal_msp.pbi</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\MQTTFormat.pbi</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\x_nucleo_iks01a2_temperature.o</file>
+      <file>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTClient-C\src\MQTTClient.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\x_nucleo_iks01a2_gyro.pbi</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\MQTTSubscribeServer.pbi</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\spwf01sa.pbi</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\x_nucleo_iks01a2_pressure.o</file>
+      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim.c</file>
+      <file>$TOOLKIT_DIR$\inc\c\xtgmath.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\x_nucleo_iks01a2_humidity.o</file>
+      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c</file>
+      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c</file>
+      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c</file>
+      <file>$PROJ_DIR$\..\..\Common\App\Inc\platform_mqtt.h</file>
+      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\MQTTSerializePublish.pbi</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\MQTTUnsubscribeClient.o</file>
+      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim_ex.c</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\MQTTConnectServer.pbi</file>
+      <file>$PROJ_DIR$\..\Inc\stm32f4xx_it.h</file>
+      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c_ex.c</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\MQTTSubscribeClient.pbi</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\MQTTUnsubscribeServer.pbi</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\MQTTDeserializePublish.o</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\MQTTUnsubscribeServer.o</file>
+      <file>$PROJ_DIR$\..\..\Common\atbox\net\wifi\spwf01sa\spwf01sa.h</file>
+      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c</file>
+      <file>$PROJ_DIR$\..\..\Common\App\Inc\app.h</file>
+      <file>$PROJ_DIR$\Cloud-JAM-EWARM\Obj\x_nucleo_iks01a2_magneto.pbi</file>
+      <file>$PROJ_DIR$\..\..\Common\App\Inc\platform_gnu.h</file>
+      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c.c</file>
+      <file>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c</file>
     </outputs>
     <file>
       <name>$PROJ_DIR$\..\Src\i2c.c</name>
       <outputs>
         <tool>
           <name>BICOMP</name>
-          <file> 67</file>
+          <file> 41</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 107</file>
+          <file> 69</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 104 142 145 124 116 134 108 139 180 127 132 133 109 105 130 173 117 354 103 121 221 131 140 244 129 269 153 228 155 224 113 236 246 243 231 240 248 260 262 119 115 112 225 87 234</file>
+          <file> 93 247 54 70 87 78 181 230 59 176 83 128 73 186 172 239 74 79 63 104 231 196 183 187 250 90 233 66 71 218 106 105 75 55 61 91 103 57 113 111 84 51 177 39 185</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 87 142 103 127 121 104 132 236 246 243 139 105 240 145 130 248 260 109 116 262 231 108 133 113 134 180 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155 354</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\Src\stm32f4xx_hal_msp.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 53</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 222</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 153 104 140 236 112 103 221 129 155 246 243 139 248 105 119 127 121 131 244 269 228 224 113 231 240 260 262 115 142 132 134 133 109 108 145 130 116 180 173 124 117 234 225</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 142 103 127 121 104 132 236 246 243 139 105 240 145 130 248 260 109 116 262 231 108 133 113 134 180 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155</file>
+          <file> 39 87 59 79 63 70 106 187 250 230 90 74 172 91 103 233 247 55 57 239 186 61 75 73 105 113 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128 218</file>
         </tool>
       </inputs>
     </file>
@@ -453,44 +430,21 @@
       <outputs>
         <tool>
           <name>BICOMP</name>
-          <file> 249</file>
+          <file> 243</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 275</file>
+          <file> 206</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 117 127 260 244 192 24 103 121 228 236 104 82 243 87 131 269 246 241 100 271 362 221 140 129 153 155 224 113 231 240 262 105 173 91 142 80 232 371 85 172 98 93 354 132 134 133 139 248 119 124 225 226 178 167 257 336 114 210 109 108 145 130 116 180 115 112 234 194 200 252 166 83 183 170 110 47 247 199 99</file>
+          <file> 181 51 230 79 247 93 149 390 78 70 32 39 176 83 128 73 142 49 194 274 59 63 104 231 196 183 187 250 186 172 239 74 111 45 87 16 184 259 18 130 60 47 218 106 105 75 90 233 66 84 177 189 109 127 226 199 64 165 55 61 91 103 57 113 54 71 185 143 138 246 118 25 155 125 50 354 238 144 58</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 127 142 103 121 104 132 236 246 243 139 105 240 145 130 248 260 109 116 262 231 108 133 113 134 180 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155 271 98 87 93 362 354 24 91 336 80 257 183 83 167 166 82 85 241 194 170 47 232 247 110 371 226 200 100 99 199 114 192 252 178 210 172</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\Src\stm32f4xx_it.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 265</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 220</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 139 104 133 105 117 132 109 130 173 28 142 134 108 145 116 180 124 103 127 121 221 131 140 244 129 269 153 228 155 224 113 236 246 243 231 240 248 260 262 119 115 112 225 234</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 142 103 127 121 104 132 236 246 243 139 105 240 145 130 248 260 109 116 262 231 108 133 113 134 180 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155 28</file>
+          <file> 79 87 59 63 70 106 187 250 230 90 74 172 91 103 233 247 55 57 239 186 61 75 73 105 113 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128 194 60 39 47 274 218 390 45 199 16 226 155 25 127 118 32 18 142 143 125 354 184 238 50 259 189 138 49 58 144 64 149 246 109 165 130</file>
         </tool>
       </inputs>
     </file>
@@ -499,108 +453,30 @@
       <outputs>
         <tool>
           <name>ILINK</name>
-          <file> 156 343</file>
+          <file> 116 219</file>
         </tool>
       </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\Src\dma.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 52</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 230</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 105 129 246 139 103 221 155 243 248 119 142 140 153 236 104 112 127 121 131 244 269 228 224 113 231 240 260 262 115 132 134 133 109 108 145 130 116 180 173 124 117 234 98 225</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 98 142 103 127 121 104 132 236 246 243 139 105 240 145 130 248 260 109 116 262 231 108 133 113 134 180 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155</file>
-        </tool>
-      </inputs>
     </file>
     <file>
       <name>$PROJ_DIR$\..\Src\gpio.c</name>
       <outputs>
         <tool>
           <name>BICOMP</name>
-          <file> 264</file>
+          <file> 242</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 255</file>
+          <file> 228</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 104 142 145 124 116 134 108 139 180 127 132 133 109 105 130 173 117 103 121 221 131 140 244 129 269 153 228 155 224 113 236 246 243 231 240 248 260 262 119 115 112 234 354 225</file>
+          <file> 61 113 105 87 90 57 79 91 70 84 106 75 55 74 103 111 51 59 63 176 104 93 231 83 196 78 183 128 181 73 187 250 230 186 172 233 247 239 66 54 71 185 218 177</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 354 142 103 127 121 104 132 236 246 243 139 105 240 145 130 248 260 109 116 262 231 108 133 113 134 180 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\Src\crc.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 62</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 235</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 104 142 145 124 116 134 108 139 180 127 132 133 109 105 130 173 117 103 121 221 131 140 244 129 269 153 228 155 224 113 236 246 243 231 240 248 260 262 119 115 112 234 271 225</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 271 142 103 127 121 104 132 236 246 243 139 105 240 145 130 248 260 109 116 262 231 108 133 113 134 180 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\startup_stm32f401xe.s</name>
-      <outputs>
-        <tool>
-          <name>AARM</name>
-          <file> 259</file>
-        </tool>
-      </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Common\App\Src\app.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 181</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 161</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 115 134 252 237 244 204 103 121 228 113 104 180 243 148 355 194 127 131 269 224 167 80 257 110 199 99 380 152 25 36 93 200 221 140 129 153 155 236 246 139 248 105 241 336 85 91 142 169 377 190 88 87 34 202 20 226 192 178 132 133 231 240 260 262 112 234 82 183 170 47 247 166 31 359 362 106 339 187 78 24 109 108 145 130 116 119 173 124 117 225 83 232 371 100 114 210 172 254 361 356 175 394 189 351 150 41 159 215</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 24 93 142 103 127 121 104 132 236 246 243 139 105 240 145 130 248 260 109 116 262 231 108 133 113 134 180 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155 91 336 80 257 183 83 167 166 82 85 241 194 170 47 232 247 110 371 226 200 100 99 199 114 192 252 178 210 172 87 25 254 34 31 361 237 359 355 362 202 356 148 152 351 377 150 106 175 380 394 339 189 169 36 41 190 88 159 187 215 204 78 20</file>
+          <file> 218 87 59 79 63 70 106 187 250 230 90 74 172 91 103 233 247 55 57 239 186 61 75 73 105 113 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128</file>
         </tool>
       </inputs>
     </file>
@@ -609,67 +485,21 @@
       <outputs>
         <tool>
           <name>BICOMP</name>
-          <file> 201</file>
+          <file> 153</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 242</file>
+          <file> 234</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 88 269 166 241 104 170 247 82 24 41 105 139 190 224 243 200 80 47 336 199 237 130 204 127 131 124 225 358 134 20 145 187 257 103 121 244 228 113 231 93 167 91 122 211 362 240 248 260 25 159 215 180 254 102 221 140 129 153 155 236 246 262 173 117 194 252 142 110 99 85 36 78 119 183 132 133 109 108 116 115 112 234 226 192 178 83 232 371 100 114 210 172</file>
+          <file> 78 118 142 105 70 125 238 32 390 247 115 113 181 230 138 16 354 199 144 191 172 74 93 84 177 193 392 90 233 376 178 237 56 176 83 128 73 186 47 127 226 45 37 134 274 79 365 91 103 150 42 151 159 59 63 104 231 196 183 187 250 239 111 51 143 246 87 50 58 18 345 21 66 155 106 75 55 61 57 54 71 185 189 149 109 25 184 259 49 64 165 130</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 36 237 243 139 105 240 145 130 248 260 41 190 88 159 187 215 204 78 134 180 119 25 257 183 254 122 102 358 211 362 142 103 127 121 104 132 236 246 109 116 262 231 108 133 113 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155 24 93 91 336 80 83 167 166 82 85 241 194 170 47 232 247 110 371 226 200 100 99 199 114 192 252 178 210 172 20</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Common\App\Src\parson.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 207</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 193</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 130 105 180 119 139 257 102 183 163 84 254 273 134 70 145 64 243 217 182 240 248 260 276 66 239 270 122 176</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 122 102 139 105 240 145 130 248 260 180 243 134 119 254 257 183 217 163 276 270 66 84 273 239 70 176 64 182</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Common\App\Src\platform_iks01a2.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 238</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 213</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 236 180 100 140 108 104 336 153 241 243 85 221 129 155 246 139 116 194 127 93 166 103 121 131 244 269 228 224 113 145 115 80 252 232 371 91 172 24 142 167 82 132 134 133 109 105 130 112 234 83 183 200 114 210 231 240 248 260 262 119 173 124 117 225 257 226 192 178 170 110 47 247 199 99</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 91 142 103 127 121 104 132 236 246 243 139 105 240 145 130 248 260 109 116 262 231 108 133 113 134 180 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155 336 80 257 183 83 167 166 82 85 241 24 93 194 170 47 232 247 110 371 226 200 100 99 199 114 192 252 178 210 172</file>
+          <file> 345 191 230 90 74 172 91 103 233 247 365 150 42 115 151 178 159 21 105 113 66 376 226 155 237 37 56 193 134 274 87 59 79 63 70 106 187 250 55 57 239 186 61 75 73 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128 390 47 45 199 16 25 127 118 32 18 142 143 125 354 184 238 50 259 189 138 49 58 144 64 149 246 109 165 130 392</file>
         </tool>
       </inputs>
     </file>
@@ -678,21 +508,21 @@
       <outputs>
         <tool>
           <name>BICOMP</name>
-          <file> 233</file>
+          <file> 173</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 185</file>
+          <file> 137</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 153 85 232 119 234 142 243 140 236 112 371 91 100 24 248 105 221 129 155 246 108 139 104 192 80 172 45 240 260 127 103 121 131 244 269 228 224 113 82 241 254 362 355 180 145 130 132 134 133 109 116 115 226 178 167 257 336 114 210 231 262 173 124 117 225 93 194 200 252 166 83 183 170 110 47 247 199 99 237</file>
+          <file> 78 18 184 66 181 230 185 87 93 71 259 45 49 390 233 74 176 83 128 73 61 90 70 149 16 130 347 172 247 79 59 63 104 231 196 183 187 250 32 142 237 274 223 113 91 103 106 105 75 55 57 54 189 109 127 226 199 64 165 186 239 111 84 51 177 47 143 138 246 118 25 155 125 50 354 238 144 58 191</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 134 139 105 240 145 130 248 260 180 119 254 362 142 103 127 121 104 132 236 246 243 109 116 262 231 108 133 113 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155 24 93 91 336 80 257 183 83 167 166 82 85 241 194 170 47 232 247 110 371 226 200 100 99 199 114 192 252 178 210 172 355 237</file>
+          <file> 105 90 74 172 91 103 233 247 113 66 237 274 87 59 79 63 70 106 187 250 230 55 57 239 186 61 75 73 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128 390 47 45 199 16 226 155 25 127 118 32 18 142 143 125 354 184 238 50 259 189 138 49 58 144 64 149 246 109 165 130 223 191</file>
         </tool>
       </inputs>
     </file>
@@ -701,1314 +531,7 @@
       <outputs>
         <tool>
           <name>BICOMP</name>
-          <file> 206</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 184</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 231 134 142 240 105 127 243 262 173 91 82 104 241 100 24 132 133 260 117 192 80 232 371 85 172 355 93 362 237 103 121 221 131 140 244 129 269 153 228 155 224 113 236 246 139 248 119 124 225 226 178 167 257 336 114 210 353 109 108 145 130 116 180 115 112 234 194 200 252 166 83 183 170 110 47 247 199 99</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 353 355 362 142 103 127 121 104 132 236 246 243 139 105 240 145 130 248 260 109 116 262 231 108 133 113 134 180 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155 237 24 93 91 336 80 257 183 83 167 166 82 85 241 194 170 47 232 247 110 371 226 200 100 99 199 114 192 252 178 210 172</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Common\App\Src\platform_usart.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 188</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 216</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 243 104 127 134 142 109 139 91 82 362 130 112 234 359 237 241 100 34 132 133 105 31 192 80 232 371 85 172 358 24 103 121 221 131 140 244 129 269 153 228 155 224 113 236 246 108 145 116 180 115 226 178 167 257 336 114 210 355 231 240 248 260 262 119 173 124 117 225 361 93 194 200 252 166 83 183 170 110 47 247 199 99</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 355 362 142 103 127 121 104 132 236 246 243 139 105 240 145 130 248 260 109 116 262 231 108 133 113 134 180 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155 237 358 34 31 361 359 24 93 91 336 80 257 183 83 167 166 82 85 241 194 170 47 232 247 110 371 226 200 100 99 199 114 192 252 178 210 172</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Common\App\Src\platform_usb.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 195</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 205</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 142 105 127 243 104 133 262 173 91 82 139 248 132 241 100 24 240 260 134 117 192 80 232 371 85 172 355 145 130 362 237 103 121 221 131 140 244 129 269 153 228 155 224 113 236 246 231 119 124 225 226 178 167 257 336 114 210 358 109 108 116 180 115 112 234 93 194 200 252 166 83 183 170 110 47 247 199 99</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 358 243 139 105 240 145 130 248 260 355 362 142 103 127 121 104 132 236 246 109 116 262 231 108 133 113 134 180 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155 237 24 93 91 336 80 257 183 83 167 166 82 85 241 194 170 47 232 247 110 371 226 200 100 99 199 114 192 252 178 210 172</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Common\App\Src\platform_mqtt.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 245</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 212</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 129 105 119 246 159 139 221 155 243 237 145 140 153 236 262 117 104 134 34 130 248 103 127 121 131 244 269 228 224 113 231 173 142 41 257 254 180 183 240 260 132 133 109 108 116 124 225 361 25 215 190 115 112 234 31 359 88 187 204 78</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 25 257 139 105 240 145 130 248 260 180 183 134 119 254 243 142 103 127 121 104 132 236 246 109 116 262 231 108 133 113 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155 34 31 361 237 359 41 190 88 159 187 215 204 78</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Common\App\Src\platform_wifi.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
           <file> 162</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 214</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 243 145 142 194 85 362 139 237 134 117 104 241 100 31 257 105 130 361 132 133 262 173 252 336 80 232 371 91 172 355 24 240 248 260 359 127 103 121 221 131 140 244 129 269 153 228 155 224 113 236 246 231 119 124 225 93 200 166 83 167 114 210 34 109 108 116 180 115 112 234 226 192 178 82 183 170 110 47 247 199 99</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 34 243 139 105 240 145 130 248 260 31 361 237 359 355 362 142 103 127 121 104 132 236 246 109 116 262 231 108 133 113 134 180 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155 24 93 91 336 80 257 183 83 167 166 82 85 241 194 170 47 232 247 110 371 226 200 100 99 199 114 192 252 178 210 172</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\Cloud-JAM-EWARM\Exe\Cloud-JAM-EWARM.out</name>
-      <outputs>
-        <tool>
-          <name>ILINK</name>
-          <file> 343</file>
-        </tool>
-        <tool>
-          <name>OBJCOPY</name>
-          <file> 77</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ILINK</name>
-          <file> 146 161 203 235 230 389 255 365 128 107 338 357 141 360 341 157 171 345 151 346 344 120 154 375 158 363 347 350 352 382 111 337 340 242 366 275 97 46 81 21 94 42 43 126 90 27 30 193 185 213 212 184 216 205 214 186 259 223 227 50 55 253 197 75 57 208 191 274 222 51 118 63 60 74 261 219 220 267 101 135 44 79 23 92 49 37 392 174 376 123</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_NDEF_SMS.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 138</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 346</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 131 127 260 234 269 224 243 112 150 237 103 121 244 228 113 231 240 262 139 104 148 351 257 221 140 129 153 155 236 246 248 105 152 377 142 134 132 133 109 108 145 130 116 180 115 106 119 173 124 117 225 183</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 106 148 152 351 377 150 142 103 127 121 104 132 236 246 243 139 105 240 145 130 248 260 109 116 262 231 108 133 113 134 180 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155 257 183 237</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_NDEF_Geo.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 144</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 345</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 228 262 237 113 150 103 121 231 240 234 244 112 127 131 269 224 243 260 139 104 148 351 257 221 140 129 153 155 236 246 248 105 152 377 142 134 132 133 109 108 145 130 116 180 115 394 119 173 124 117 225 183</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 394 148 152 351 377 150 142 103 127 121 104 132 236 246 243 139 105 240 145 130 248 260 109 116 262 231 108 133 113 134 180 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155 257 183 237</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src\MQTTSubscribeServer.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 39</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 90</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 215 240 78 139 257 159 180 260 88 187 204 190 134 105 119 248 145 130 183</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 190 88 159 187 215 204 78 134 139 105 240 145 130 248 260 180 119 257 183</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src\MQTTFormat.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 40</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 94</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 240 190 139 215 134 105 260 183 257 119 248 159 180 145 130 88 187 204 78</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 78 134 139 105 240 145 130 248 260 180 119 190 88 159 187 215 204 257 183</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src\MQTTDeserializePublish.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 89</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 21</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 78 180 257 139 130 187 190 134 105 119 240 248 145 88 204 260 159 215 183</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 78 134 139 105 240 145 130 248 260 180 119 190 88 159 187 215 204 257 183</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Common\Nucleo\Components\HTS221_Driver.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 378</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 365</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 139 134 105 130 243 240 145 180 99 248 260 119</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 99 243 139 105 240 145 130 248 260 134 180 119</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_NDEF_URI.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 179</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 344</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 257 153 234 351 140 236 112 221 129 155 246 243 139 248 105 104 148 150 237 103 127 121 131 244 269 228 224 113 231 240 260 262 152 377 142 134 132 133 109 108 145 130 116 180 115 356 119 173 124 117 225 183</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 356 148 152 351 377 150 142 103 127 121 104 132 236 246 243 139 105 240 145 130 248 260 109 116 262 231 108 133 113 134 180 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155 257 183 237</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\Src\tim.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 266</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 101</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 104 117 133 105 139 127 132 109 130 173 142 134 108 145 116 180 124 103 121 221 131 140 244 129 269 153 228 155 224 113 236 246 243 231 240 248 260 262 119 115 112 234 93 225</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 93 142 103 127 121 104 132 236 246 243 139 105 240 145 130 248 260 109 116 262 231 108 133 113 134 180 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src\MQTTPacket.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 95</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 42</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 78 187 130 139 257 180 145 105 88 204 190 134 119 240 248 260 159 215 183</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 78 134 139 105 240 145 130 248 260 180 119 190 88 159 187 215 204 257 183</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Common\Nucleo\Components\IIS2DH_Driver.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 372</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 338</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 105 139 243 240 248 260 371 145 130</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 371 243 139 105 240 145 130 248 260</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_NDEF_Vcard.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 149</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 120</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 236 148 140 234 257 153 112 351 221 129 155 246 243 139 248 105 180 104 152 150 237 103 127 121 131 244 269 228 224 113 231 240 260 262 377 142 134 132 133 109 108 145 130 116 119 115 380 173 124 117 225 183</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 380 148 152 351 377 150 142 103 127 121 104 132 236 246 243 139 105 240 145 130 248 260 109 116 262 231 108 133 113 134 180 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155 257 183 237</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 268</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 191</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 260 127 131 269 224 243 103 121 244 228 113 231 240 262 105 104 221 140 129 153 155 236 246 139 248 115 142 132 134 133 109 108 145 130 116 119 112 234 180 173 124 117 225</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 142 103 127 121 104 132 236 246 243 139 105 240 145 130 248 260 109 116 262 231 108 133 113 134 180 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\Src\usart.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 71</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 135</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 221 119 103 155 243 248 129 246 139 105 104 142 140 153 236 112 234 98 127 121 131 244 269 228 224 113 231 240 260 262 115 354 132 134 133 109 108 145 130 116 180 173 124 117 362 225</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 362 142 103 127 121 104 132 236 246 243 139 105 240 145 130 248 260 109 116 262 231 108 133 113 134 180 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155 354 98</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Common\atbox\at\at.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 160</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 203</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 130 237 105 139 145 257 243 240 248 260 180 183 359</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 359 243 139 105 240 145 130 248 260 237 257 180 183</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_ISO7816_Password.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 374</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 141</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 132 134 109 139 234 377 130 112 104 133 105 119 142 108 145 116 148 152 351 150 257 237 103 127 121 221 131 140 244 129 269 153 228 155 224 113 236 246 243 231 240 248 260 262 180 115 198 173 124 117 225 183</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 198 148 152 351 377 150 142 103 127 121 104 132 236 246 243 139 105 240 145 130 248 260 109 116 262 231 108 133 113 134 180 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155 257 183 237</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\Src\system_stm32f4xx.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 73</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 267</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 134 231 240 262 104 115 243 260 142 105 236 246 139 248 132 119 112 133 109 108 145 130 116 103 127 121 221 131 140 244 129 269 153 228 155 224 113 180 173 124 117 234 225</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 132 236 246 243 139 105 240 145 130 248 260 109 116 262 231 108 133 142 103 127 121 104 113 134 180 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src\MQTTConnectClient.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 86</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 46</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 159 139 88 215 180 145 105 183 78 257 187 204 130 190 134 119 240 248 260</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 190 88 159 187 215 204 78 134 139 105 240 145 130 248 260 180 119 257 183</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src\MQTTUnsubscribeServer.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 22</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 30</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 215 240 78 139 257 159 180 260 88 187 204 190 134 105 119 248 145 130 183</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 190 88 159 187 215 204 78 134 139 105 240 145 130 248 260 180 119 257 183</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src\MQTTSubscribeClient.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 29</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 126</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 215 240 78 139 257 159 180 260 88 187 204 190 134 105 119 248 145 130 183</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 190 88 159 187 215 204 78 134 139 105 240 145 130 248 260 180 119 257 183</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src\MQTTUnsubscribeClient.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 35</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 27</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 204 240 88 190 134 105 257 187 119 260 139 78 159 215 180 248 145 130 183</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 190 88 159 187 215 204 78 134 139 105 240 145 130 248 260 180 119 257 183</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\drv_I2C_M24SR.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 165</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 389</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 116 257 142 145 117 104 183 134 108 139 105 173 225 237 132 133 109 130 119 124 103 127 121 221 131 140 244 129 269 153 228 155 224 113 236 246 243 231 240 248 260 262 180 115 112 150 234</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 150 142 103 127 121 104 132 236 246 243 139 105 240 145 130 248 260 109 116 262 231 108 133 113 134 180 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155 257 183 237</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src\MQTTSerializePublish.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 18</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 43</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 204 240 88 190 134 105 257 187 119 260 139 78 159 215 180 248 145 130 183</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 190 88 159 187 215 204 78 134 139 105 240 145 130 248 260 180 119 257 183</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Common\atbox\net\wifi\spwf01sa\spwf01sa.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 48</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 186</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 243 139 105 361 248 237 257 240 145 180 359 134 130 31 260 183 119</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 31 361 243 139 105 240 145 130 248 260 237 359 257 180 183 134 119</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_NDEF.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 387</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 341</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 257 153 234 351 140 236 112 221 129 155 246 243 139 248 105 104 150 237 103 127 121 131 244 269 228 224 113 231 240 260 262 152 377 142 134 132 133 109 108 145 130 116 180 115 148 119 173 124 117 225 183</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 148 152 351 377 150 142 103 127 121 104 132 236 246 243 139 105 240 145 130 248 260 109 116 262 231 108 133 113 134 180 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155 257 183 237</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src\MQTTConnectServer.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 26</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 81</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 119 240 215 190 139 257 134 105 260 183 180 248 159 78 145 130 88 187 204</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 78 134 139 105 240 145 130 248 260 180 119 190 88 159 187 215 204 257 183</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_NDEF_AAR.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 367</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 157</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 104 133 105 139 234 119 112 377 134 132 109 130 142 108 145 116 148 152 351 150 257 237 103 127 121 221 131 140 244 129 269 153 228 155 224 113 236 246 243 231 240 248 260 262 180 115 189 173 124 117 225 183</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 189 148 152 351 377 150 142 103 127 121 104 132 236 246 243 139 105 240 145 130 248 260 109 116 262 231 108 133 113 134 180 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155 257 183 237</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTClient-C\src\MQTTClient.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 348</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 97</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 204 105 260 243 139 190 88 240 187 78 119 248 134 180 41 25 159 215 145 130 257 254 183</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 41 190 88 159 187 215 204 78 134 139 105 240 145 130 248 260 180 119 25 257 183 254 243</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Common\Nucleo\Components\lib_M24SR.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 381</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 360</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 244 234 150 237 103 121 228 113 231 240 262 139 104 112 127 131 269 224 243 260 105 257 221 140 129 153 155 236 246 248 180 377 142 134 132 133 109 108 145 130 116 119 173 115 351 124 117 225 183</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 351 377 150 142 103 127 121 104 132 236 246 243 139 105 240 145 130 248 260 109 116 262 231 108 133 113 134 180 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155 257 183 237</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_NDEF_Email.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 125</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 171</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 152 130 234 134 132 109 139 112 377 104 133 105 148 142 108 145 116 351 150 257 237 103 127 121 221 131 140 244 129 269 153 228 155 224 113 236 246 243 231 240 248 260 262 180 115 175 119 173 124 117 225 183</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 175 148 152 351 377 150 142 103 127 121 104 132 236 246 243 139 105 240 145 130 248 260 109 116 262 231 108 133 113 134 180 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155 257 183 237</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_NDEF_MyApp.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 137</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 151</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 244 234 150 237 103 121 228 113 231 240 262 139 112 127 131 269 224 243 260 104 148 351 257 221 140 129 153 155 236 246 248 105 180 152 377 142 134 132 133 109 108 145 130 116 119 115 339 173 124 117 225 183</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 339 148 152 351 377 150 142 103 127 121 104 132 236 246 243 139 105 240 145 130 248 260 109 116 262 231 108 133 113 134 180 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155 257 183 237</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Common\Nucleo\Components\IIS2DH_Driver_HL.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 370</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 357</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 139 130 105 80 257 176 336 145 70 371 83 180 183 240 248 260 243 64 110</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 110 336 80 257 139 105 240 145 130 248 260 180 183 83 243 371 70 176 64</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Common\Nucleo\Components\HTS221_Driver_HL.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 385</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 128</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 64 82 130 139 243 105 257 70 99 145 100 85 80 83 180 183 240 248 260 176</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 100 82 80 257 139 105 240 145 130 248 260 180 183 83 243 85 99 70 176 64</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Common\Nucleo\Components\LPS22HB_Driver_HL.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 349</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 347</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 139 64 114 257 105 130 243 241 145 70 85 80 83 180 183 240 248 260 199 176</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 199 241 80 257 139 105 240 145 130 248 260 180 183 83 243 85 114 70 176 64</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Common\Nucleo\Components\LSM303AGR_ACC_driver.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 168</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 350</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 105 139 243 248 240 260 247 145 130</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 247 243 139 105 240 145 130 248 260</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Common\Nucleo\Components\m24sr.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 147</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 366</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 134 132 109 139 234 130 112 104 133 105 119 142 108 145 116 150 257 237 103 127 121 221 131 140 244 129 269 153 228 155 224 113 236 246 243 231 240 248 260 262 180 115 377 173 124 117 225 183</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 377 150 142 103 127 121 104 132 236 246 243 139 105 240 145 130 248 260 109 116 262 231 108 133 113 134 180 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155 257 183 237</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Common\Nucleo\X_NUCLEO_IKS01A2\x_nucleo_iks01a2_gyro.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 33</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 105 243 82 134 142 145 139 108 104 91 167 80 257 130 241 132 133 115 170 336 47 83 180 183 240 248 260 166 85 103 127 121 221 131 140 244 129 269 153 228 155 224 113 236 246 109 116 112 234 226 231 262 119 173 124 117 225</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 226 170 336 80 257 139 105 240 145 130 248 260 180 183 83 243 167 47 91 142 103 127 121 104 132 236 246 109 116 262 231 108 133 113 134 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155 166 82 85 241</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 65</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 75</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 104 130 132 109 139 173 133 105 117 142 134 108 145 116 180 124 103 127 121 221 131 140 244 129 269 153 228 155 224 113 236 246 243 231 240 248 260 262 119 115 112 234 225</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 142 103 127 121 104 132 236 246 243 139 105 240 145 130 248 260 109 116 262 231 108 133 113 134 180 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 250</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 197</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 134 142 108 180 139 116 145 104 124 132 133 109 105 130 173 117 103 127 121 221 131 140 244 129 269 153 228 155 224 113 236 246 243 231 240 248 260 262 119 115 112 234 225</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 142 103 127 121 104 132 236 246 243 139 105 240 145 130 248 260 109 116 262 231 108 133 113 134 180 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Common\Nucleo\X_NUCLEO_IKS01A2\x_nucleo_iks01a2_accelero.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 61</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 44</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 244 145 105 243 166 103 121 228 113 91 139 247 336 127 131 269 224 108 104 232 167 80 257 130 85 221 140 129 153 155 236 246 115 170 110 47 83 180 183 240 248 260 371 142 82 241 132 134 133 109 116 112 234 194 231 262 119 173 124 117 225</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 194 170 336 80 257 139 105 240 145 130 248 260 180 183 83 243 167 47 232 247 110 371 91 142 103 127 121 104 132 236 246 109 116 262 231 108 133 113 134 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155 166 82 85 241</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ramfunc.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 196</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 57</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 153 104 140 236 112 103 221 129 155 246 243 139 248 105 119 127 121 131 244 269 228 224 113 231 240 260 262 115 142 132 134 133 109 108 145 130 116 180 173 124 117 234 225</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 142 103 127 121 104 132 236 246 243 139 105 240 145 130 248 260 109 116 262 231 108 133 113 134 180 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 251</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 208</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 127 260 131 115 104 269 224 243 121 244 228 113 231 240 262 105 103 221 140 129 153 155 236 246 139 248 119 112 142 132 134 133 109 108 145 130 116 180 173 124 117 234 225</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 142 103 127 121 104 132 236 246 243 139 105 240 145 130 248 260 109 116 262 231 108 133 113 134 180 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 256</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 223</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 224 243 269 127 131 260 104 115 121 244 228 113 231 240 262 105 103 221 140 129 153 155 236 246 139 248 119 112 142 132 134 133 109 108 145 130 116 180 173 124 117 234 225</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 142 103 127 121 104 132 236 246 243 139 105 240 145 130 248 260 109 116 262 231 108 133 113 134 180 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Common\Nucleo\Components\LSM6DSL_ACC_GYRO_driver_HL.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 136</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 340</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 64 105 336 180 248 80 47 83 139 183 240 260 243 70 167 257 145 130 170 176</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 170 336 80 257 139 105 240 145 130 248 260 180 183 83 243 167 47 70 176 64</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 58</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 227</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 104 116 142 145 124 134 108 139 180 132 133 109 105 130 173 117 103 127 121 221 131 140 244 129 269 153 228 155 224 113 236 246 243 231 240 248 260 262 119 115 112 234 225</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 142 103 127 121 104 132 236 246 243 139 105 240 145 130 248 260 109 116 262 231 108 133 113 134 180 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 229</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 55</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 221 119 103 155 243 248 129 246 139 105 140 153 236 104 127 121 131 244 269 228 224 113 231 240 260 262 115 142 132 134 133 109 108 145 130 116 180 173 124 117 112 234 225</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 142 103 127 121 104 132 236 246 243 139 105 240 145 130 248 260 109 116 262 231 108 133 113 134 180 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Common\Nucleo\Components\LPS22HB_Driver.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 364</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 363</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 105 139 248 243 240 260 114 145 130</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 114 243 139 105 240 145 130 248 260</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Common\Nucleo\Components\LSM303AGR_ACC_driver_HL.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 373</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 352</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 64 83 260 183 105 243 139 240 247 180 248 70 336 80 257 145 130 232 176</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 232 336 80 257 139 105 240 145 130 248 260 180 183 83 243 247 70 176 64</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Common\Nucleo\X_NUCLEO_IKS01A2\x_nucleo_iks01a2_humidity.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 38</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 23</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 269 80 224 243 117 127 131 104 100 180 248 105 166 103 121 244 228 113 231 85 83 139 183 240 260 336 221 140 129 153 155 236 246 262 119 173 91 82 99 257 145 130 142 167 241 132 134 133 109 108 116 124 225 252 115 112 234</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 252 100 82 80 257 139 105 240 145 130 248 260 180 183 83 243 85 99 91 142 103 127 121 104 132 236 246 109 116 262 231 108 133 113 134 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155 336 167 166 241</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_crc.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 68</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 50</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 121 105 240 231 228 113 262 244 127 131 269 224 243 260 104 115 103 221 140 129 153 155 236 246 139 248 119 112 142 132 134 133 109 108 145 130 116 180 173 124 117 234 225</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 142 103 127 121 104 132 236 246 243 139 105 240 145 130 248 260 109 116 262 231 108 133 113 134 180 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_STProprietary_feature.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 177</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 375</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 132 134 109 139 234 377 130 112 104 133 105 119 142 108 145 116 148 152 351 150 257 237 103 127 121 221 131 140 244 129 269 153 228 155 224 113 236 246 243 231 240 248 260 262 180 115 209 173 124 117 225 183</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 209 148 152 351 377 150 142 103 127 121 104 132 236 246 243 139 105 240 145 130 248 260 109 116 262 231 108 133 113 134 180 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155 257 183 237</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_TagType4.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 164</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 158</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 236 175 351 140 105 257 153 173 189 221 129 155 246 243 139 248 104 148 356 394 150 237 103 127 121 131 244 269 228 224 113 231 240 260 262 117 180 106 380 339 169 152 377 142 134 132 133 109 108 145 130 116 119 124 225 183 202 115 112 234</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 202 356 148 152 351 377 150 142 103 127 121 104 132 236 246 243 139 105 240 145 130 248 260 109 116 262 231 108 133 113 134 180 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155 257 183 237 106 175 380 394 339 189 169</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_NDEF_Wifi.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 143</file>
         </tool>
         <tool>
           <name>ICCARM</name>
@@ -2018,103 +541,1300 @@
       <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 134 142 108 105 234 139 116 112 148 145 104 152 377 132 133 109 130 119 351 150 257 237 103 127 121 221 131 140 244 129 269 153 228 155 224 113 236 246 243 231 240 248 260 262 180 115 169 173 124 117 225 183</file>
+          <file> 70 59 90 63 183 55 274 231 187 16 230 47 79 104 196 250 103 84 177 159 237 113 87 118 25 142 49 345 191 176 93 83 78 128 181 73 74 66 150 42 138 184 259 45 18 130 223 390 106 105 75 61 91 57 111 51 151 21 226 143 246 199 127 64 165 217 186 172 233 247 239 54 71 185 365 376 115 178 155 189 149 109 32 125 50 354 238 144 58</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 169 148 152 351 377 150 142 103 127 121 104 132 236 246 243 139 105 240 145 130 248 260 109 116 262 231 108 133 113 134 180 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155 257 183 237</file>
+          <file> 217 223 274 87 59 79 63 70 106 187 250 230 90 74 172 91 103 233 247 55 57 239 186 61 75 73 105 113 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128 191 390 47 45 199 16 226 155 25 127 118 32 18 142 143 125 354 184 238 50 259 189 138 49 58 144 64 149 246 109 165 130</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\Common\Nucleo\Components\LSM303AGR_MAG_driver.c</name>
+      <name>$PROJ_DIR$\..\..\Common\App\Src\platform_iks01a2.c</name>
       <outputs>
         <tool>
           <name>BICOMP</name>
-          <file> 391</file>
+          <file> 168</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 382</file>
+          <file> 141</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 105 139 248 240 260 172 243 145 130</file>
+          <file> 113 49 93 61 70 199 78 181 230 142 18 176 83 128 73 90 57 143 79 47 118 59 63 104 231 196 183 187 250 91 54 16 246 184 259 45 130 390 87 127 32 106 105 75 55 74 103 71 185 25 155 138 64 165 186 172 233 247 239 66 111 84 51 177 226 189 149 109 125 50 354 238 144 58</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 172 243 139 105 240 145 130 248 260</file>
+          <file> 45 87 59 79 63 70 106 187 250 230 90 74 172 91 103 233 247 55 57 239 186 61 75 73 105 113 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128 199 16 226 155 25 127 118 32 18 142 390 47 143 125 354 184 238 50 259 189 138 49 58 144 64 149 246 109 165 130</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\Common\Nucleo\Components\LSM6DSL_ACC_GYRO_driver.c</name>
+      <name>$PROJ_DIR$\..\..\Common\App\Src\app.c</name>
       <outputs>
         <tool>
           <name>BICOMP</name>
-          <file> 393</file>
+          <file> 114</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 337</file>
+          <file> 119</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 105 139 248 243 240 260 47 145 130</file>
+          <file> 51 105 79 104 230 191 143 16 159 196 250 91 70 74 237 94 223 246 59 63 231 183 187 57 199 184 259 45 49 18 130 265 99 376 345 47 138 176 93 83 78 128 181 73 61 90 111 142 129 269 150 42 39 351 147 392 189 149 109 87 106 75 55 103 66 84 177 118 25 127 64 165 226 113 256 274 72 208 151 21 390 186 172 233 247 239 54 71 185 32 155 125 50 354 238 144 58 388 195 220 133 252 140 215 95 365 115 178</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 47 243 139 105 240 145 130 248 260</file>
+          <file> 390 47 87 59 79 63 70 106 187 250 230 90 74 172 91 103 233 247 55 57 239 186 61 75 73 105 113 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128 45 199 16 226 155 25 127 118 32 18 142 143 125 354 184 238 50 259 189 138 49 58 144 64 149 246 109 165 130 39 376 237 351 388 256 191 195 223 274 147 220 94 99 215 269 95 72 133 265 252 208 140 129 345 365 150 42 115 151 178 159 21 392</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\Common\Nucleo\X_NUCLEO_IKS01A2\x_nucleo_iks01a2_magneto.c</name>
+      <name>$PROJ_DIR$\..\..\Common\App\Src\parson.c</name>
       <outputs>
         <tool>
           <name>BICOMP</name>
+          <file> 163</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 160</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 103 74 113 66 90 226 56 155 123 31 237 203 105 34 91 371 230 180 80 172 233 247 198 26 169 221 37 107</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 37 56 90 74 172 91 103 233 247 113 230 105 66 237 226 155 180 123 198 221 26 31 203 169 34 107 371 80</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Common\App\Src\platform_usart.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 148</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 188</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 230 79 106 70 45 32 274 87 75 84 177 256 142 49 351 191 105 90 233 74 66 149 16 184 259 18 130 193 390 59 63 176 104 93 231 83 196 78 183 128 181 73 187 250 186 172 247 239 111 51 189 109 127 226 199 64 165 223 55 61 91 103 57 113 54 71 185 388 195 47 143 138 246 118 25 155 125 50 354 238 144 58</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 223 274 87 59 79 63 70 106 187 250 230 90 74 172 91 103 233 247 55 57 239 186 61 75 73 105 113 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128 191 193 351 388 256 195 390 47 45 199 16 226 155 25 127 118 32 18 142 143 125 354 184 238 50 259 189 138 49 58 144 64 149 246 109 165 130</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Common\App\Src\platform_usb.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 157</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 139</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 87 105 74 79 230 239 111 45 32 90 233 70 142 49 390 172 247 106 75 51 149 16 184 259 18 130 223 91 103 274 191 59 63 176 104 93 231 83 196 78 183 128 181 73 187 250 186 66 84 177 189 109 127 226 199 64 165 193 55 61 57 113 54 71 185 47 143 138 246 118 25 155 125 50 354 238 144 58</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 193 230 90 74 172 91 103 233 247 223 274 87 59 79 63 70 106 187 250 55 57 239 186 61 75 73 105 113 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128 191 390 47 45 199 16 226 155 25 127 118 32 18 142 143 125 354 184 238 50 259 189 138 49 58 144 64 149 246 109 165 130</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Common\App\Src\platform_mqtt.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 232</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 136</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 83 74 66 388 115 90 176 128 73 186 230 91 93 78 181 70 105 351 103 233 59 79 63 104 231 196 183 187 250 239 71 185 195 87 365 226 237 113 155 172 247 106 75 55 61 57 54 191 376 178 150 111 84 51 177 256 42 151 159 21</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 376 226 90 74 172 91 103 233 247 113 155 105 66 237 230 87 59 79 63 70 106 187 250 55 57 239 186 61 75 73 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128 351 388 256 191 195 365 150 42 115 151 178 159 21</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Common\App\Src\platform_wifi.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 122</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 190</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 181 230 78 91 93 143 18 274 90 191 176 83 128 73 51 70 142 49 388 226 74 103 256 79 59 63 104 231 196 183 187 250 239 111 246 199 16 184 259 45 130 223 390 172 233 247 195 87 106 105 75 186 66 84 177 47 138 118 25 127 64 165 351 55 61 57 113 54 71 185 189 149 109 32 155 125 50 354 238 144 58</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 351 230 90 74 172 91 103 233 247 388 256 191 195 223 274 87 59 79 63 70 106 187 250 55 57 239 186 61 75 73 105 113 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128 390 47 45 199 16 226 155 25 127 118 32 18 142 143 125 354 184 238 50 259 189 138 49 58 144 64 149 246 109 165 130</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\startup_stm32f401xe.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 236</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Src\crc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 355</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 171</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 51 87 70 75 74 90 106 55 103 111 79 105 61 91 57 113 84 59 63 176 104 93 231 83 196 78 183 128 181 73 187 250 230 186 172 233 247 239 66 54 71 185 194 177</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 194 87 59 79 63 70 106 187 250 230 90 74 172 91 103 233 247 55 57 239 186 61 75 73 105 113 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Src\dma.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 360</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 192</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 83 59 176 128 73 186 172 239 74 87 93 78 181 230 247 70 54 79 63 104 231 196 183 187 250 90 233 66 71 106 105 75 55 61 91 103 57 113 111 84 51 185 60 177</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 60 87 59 79 63 70 106 187 250 230 90 74 172 91 103 233 247 55 57 239 186 61 75 73 105 113 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Cloud-JAM-EWARM\Exe\Cloud-JAM-EWARM.out</name>
+      <outputs>
+        <tool>
+          <name>OBJCOPY</name>
+          <file> 23</file>
+        </tool>
+        <tool>
+          <name>ILINK</name>
+          <file> 219</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 92 119 158 171 192 273 228 264 102 69 207 224 97 255 201 120 126 210 96 211 209 53 100 257 121 276 222 214 216 271 62 200 212 234 277 206 65 349 29 386 19 346 348 101 35 379 387 160 137 141 136 154 188 139 190 145 236 166 179 344 338 225 161 17 340 164 156 197 175 350 52 356 341 24 241 167 170 249 67 85 359 28 372 46 369 364 278 131 267 68</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Common\Nucleo\Components\lib_M24SR.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 270</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 255</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 70 187 231 185 95 191 59 63 183 71 79 104 196 250 230 90 233 74 113 226 176 93 83 78 128 181 73 186 172 247 239 269 87 105 106 75 55 61 91 103 57 66 111 54 215 84 51 177 155</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 215 269 95 87 59 79 63 70 106 187 250 230 90 74 172 91 103 233 247 55 57 239 186 61 75 73 105 113 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128 226 155 191</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_NDEF_Email.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 82</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 126</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 99 91 185 105 57 71 269 87 61 90 70 94 106 75 55 74 103 215 95 226 191 59 79 63 176 104 93 231 83 196 78 183 128 181 73 187 250 230 186 172 233 247 239 113 54 133 66 111 84 51 177 155</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 133 94 99 215 269 95 87 59 79 63 70 106 187 250 230 90 74 172 91 103 233 247 55 57 239 186 61 75 73 105 113 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128 226 155 191</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_NDEF_Geo.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 89</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 210</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 183 191 95 59 63 185 231 187 71 79 104 196 250 230 90 233 74 70 94 215 226 176 93 83 78 128 181 73 186 172 247 239 99 269 87 105 106 75 55 61 91 103 57 113 54 252 66 111 84 51 177 155</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 252 94 99 215 269 95 87 59 79 63 70 106 187 250 230 90 74 172 91 103 233 247 55 57 239 186 61 75 73 105 113 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128 226 155 191</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src\MQTTFormat.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 363</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
           <file> 19</file>
         </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 92</file>
-        </tool>
       </outputs>
       <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 104 105 139 142 115 166 145 243 82 134 108 210 257 130 167 241 132 133 109 116 80 91 172 83 180 183 240 248 260 336 85 103 127 121 221 131 140 244 129 269 153 228 155 224 113 236 246 231 262 112 234 178 119 173 124 117 225</file>
+          <file> 172 150 90 178 105 74 247 155 226 66 233 115 113 91 103 42 151 159 21</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 178 210 166 80 257 139 105 240 145 130 248 260 180 183 83 243 172 91 142 103 127 121 104 132 236 246 109 116 262 231 108 133 113 134 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155 336 167 82 85 241</file>
+          <file> 21 105 90 74 172 91 103 233 247 113 66 150 42 115 151 178 159 226 155</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\Common\Nucleo\X_NUCLEO_IKS01A2\x_nucleo_iks01a2_pressure.c</name>
+      <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.c</name>
       <outputs>
         <tool>
           <name>BICOMP</name>
-          <file> 96</file>
+          <file> 40</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 49</file>
+          <file> 17</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 127 131 80 117 269 224 243 104 85 180 248 105 166 103 121 244 228 113 231 199 83 139 183 240 260 336 221 140 129 153 155 236 246 262 119 173 91 241 114 257 145 130 142 167 82 132 134 133 109 108 116 124 225 192 115 112 234</file>
+          <file> 70 103 106 55 90 111 75 74 51 87 105 61 91 57 113 84 59 79 63 176 104 93 231 83 196 78 183 128 181 73 187 250 230 186 172 233 247 239 66 54 71 185 177</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 192 199 241 80 257 139 105 240 145 130 248 260 180 183 83 243 85 114 91 142 103 127 121 104 132 236 246 109 116 262 231 108 133 113 134 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155 336 167 166 82</file>
+          <file> 87 59 79 63 70 106 187 250 230 90 74 172 91 103 233 247 55 57 239 186 61 75 73 105 113 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src\MQTTSubscribeServer.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 367</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 35</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 178 172 21 90 226 115 113 247 42 151 159 150 105 74 66 233 91 103 155</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 150 42 115 151 178 159 21 105 90 74 172 91 103 233 247 113 66 226 155</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src\MQTTUnsubscribeClient.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 358</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 379</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 159 172 42 150 105 74 226 151 66 247 90 21 115 178 113 233 91 103 155</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 150 42 115 151 178 159 21 105 90 74 172 91 103 233 247 113 66 226 155</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src\MQTTPacket.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 36</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 346</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 21 151 103 90 226 113 91 74 42 159 150 105 66 172 233 247 115 178 155</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 21 105 90 74 172 91 103 233 247 113 66 150 42 115 151 178 159 226 155</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src\MQTTSerializePublish.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 378</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 348</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 159 172 42 150 105 74 226 151 66 247 90 21 115 178 113 233 91 103 155</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 150 42 115 151 178 159 21 105 90 74 172 91 103 233 247 113 66 226 155</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTClient-C\src\MQTTClient.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 204</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 65</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 159 74 247 230 90 150 42 172 151 21 66 233 105 113 365 376 115 178 91 103 226 237 155</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 365 150 42 115 151 178 159 21 105 90 74 172 91 103 233 247 113 66 376 226 155 237 230</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Src\stm32f4xx_hal_msp.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 362</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 175</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 78 181 230 93 247 70 54 59 176 83 128 73 186 172 239 74 79 63 104 231 196 183 187 250 90 233 66 71 87 106 105 75 55 61 91 103 57 113 111 84 51 185 177</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 87 59 79 63 70 106 187 250 230 90 74 172 91 103 233 247 55 57 239 186 61 75 73 105 113 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src\MQTTConnectServer.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 381</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 29</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 66 172 178 150 90 226 105 74 247 155 113 233 115 21 91 103 42 151 159</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 21 105 90 74 172 91 103 233 247 113 66 150 42 115 151 178 159 226 155</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src\MQTTSubscribeClient.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 384</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 101</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 178 172 21 90 226 115 113 247 42 151 159 150 105 74 66 233 91 103 155</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 150 42 115 151 178 159 21 105 90 74 172 91 103 233 247 113 66 226 155</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Common\Nucleo\Components\HTS221_Driver.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 262</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 264</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 90 105 74 103 230 172 91 113 58 233 247 66</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 58 230 90 74 172 91 103 233 247 105 113 66</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Common\atbox\at\at.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 117</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 158</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 74 90 103 191 91 226 230 172 233 247 113 155 195</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 195 230 90 74 172 91 103 233 247 191 226 113 155</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Src\usart.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 22</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 85</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 172 176 74 186 59 128 73 239 83 70 87 93 78 181 230 247 54 185 60 79 63 104 231 196 183 187 250 90 233 66 71 218 106 105 75 55 61 91 103 57 113 111 84 51 274 177</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 274 87 59 79 63 70 106 187 250 230 90 74 172 91 103 233 247 55 57 239 186 61 75 73 105 113 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128 218 60</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src\MQTTConnectClient.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 33</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 349</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 115 90 42 178 113 91 74 155 21 226 151 159 103 150 105 66 172 233 247</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 150 42 115 151 178 159 21 105 90 74 172 91 103 233 247 113 66 226 155</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src\MQTTUnsubscribeServer.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 385</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 387</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 178 172 21 90 226 115 113 247 42 151 159 150 105 74 66 233 91 103 155</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 150 42 115 151 178 159 21 105 90 74 172 91 103 233 247 113 66 226 155</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Common\Nucleo\Components\IIS2DH_Driver.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 275</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 207</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 74 90 230 172 233 247 259 91 103</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 259 230 90 74 172 91 103 233 247</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_ISO7816_Password.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 266</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 97</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 105 57 185 269 91 71 87 61 90 74 70 106 75 55 103 66 94 99 215 95 226 191 59 79 63 176 104 93 231 83 196 78 183 128 181 73 187 250 230 186 172 233 247 239 113 54 152 111 84 51 177 155</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 152 94 99 215 269 95 87 59 79 63 70 106 187 250 230 90 74 172 91 103 233 247 55 57 239 186 61 75 73 105 113 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128 226 155 191</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Src\stm32f4xx_it.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 245</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 170</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 90 57 105 87 61 113 91 70 84 382 106 75 55 74 103 111 51 59 79 63 176 104 93 231 83 196 78 183 128 181 73 187 250 230 186 172 233 247 239 66 54 71 177 185</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 87 59 79 63 70 106 187 250 230 90 74 172 91 103 233 247 55 57 239 186 61 75 73 105 113 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128 382</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_NDEF.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 272</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 201</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 181 230 226 78 185 215 93 247 71 176 83 128 73 186 172 239 90 70 95 191 59 79 63 104 231 196 183 187 250 233 74 99 269 87 105 106 75 55 61 91 103 57 113 54 94 66 111 84 51 177 155</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 94 99 215 269 95 87 59 79 63 70 106 187 250 230 90 74 172 91 103 233 247 55 57 239 186 61 75 73 105 113 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128 226 155 191</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_NDEF_AAR.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 254</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 120</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 90 57 185 105 87 61 74 71 269 91 70 106 75 55 103 66 94 99 215 95 226 191 59 79 63 176 104 93 231 83 196 78 183 128 181 73 187 250 230 186 172 233 247 239 113 54 140 111 84 51 177 155</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 140 94 99 215 269 95 87 59 79 63 70 106 187 250 230 90 74 172 91 103 233 247 55 57 239 186 61 75 73 105 113 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128 226 155 191</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_NDEF_MyApp.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 76</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 96</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 231 187 185 95 191 59 63 183 71 79 104 196 250 230 90 233 74 113 70 94 215 226 176 93 83 78 128 181 73 186 172 247 239 99 269 87 105 106 75 55 61 91 103 57 66 54 208 111 84 51 177 155</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 208 94 99 215 269 95 87 59 79 63 70 106 187 250 230 90 74 172 91 103 233 247 55 57 239 186 61 75 73 105 113 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128 226 155 191</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Src\system_stm32f4xx.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 38</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 249</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 74 106 186 172 239 66 230 247 87 70 71 187 250 90 233 105 54 75 55 61 91 103 57 59 79 63 176 104 93 231 83 196 78 183 128 181 73 113 111 84 51 185 177</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 106 187 250 230 90 74 172 91 103 233 247 55 57 239 186 61 75 87 59 79 63 70 73 105 113 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_NDEF_SMS.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 77</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 211</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 104 79 230 233 185 196 250 90 74 71 95 191 59 63 231 183 187 70 94 215 226 176 93 83 78 128 181 73 186 172 247 239 99 269 87 105 106 75 55 61 91 103 57 113 54 72 66 111 84 51 177 155</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 72 94 99 215 269 95 87 59 79 63 70 106 187 250 230 90 74 172 91 103 233 247 55 57 239 186 61 75 73 105 113 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128 226 155 191</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Src\tim.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 244</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 67</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 105 87 61 113 90 57 79 91 70 84 106 75 55 74 103 111 51 59 63 176 104 93 231 83 196 78 183 128 181 73 187 250 230 186 172 233 247 239 66 54 71 185 47 177</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 47 87 59 79 63 70 106 187 250 230 90 74 172 91 103 233 247 55 57 239 186 61 75 73 105 113 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\drv_I2C_M24SR.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 132</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 273</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 90 226 70 75 74 87 66 155 106 55 103 84 177 191 105 61 91 57 111 51 59 79 63 176 104 93 231 83 196 78 183 128 181 73 187 250 230 186 172 233 247 239 113 54 71 95 185</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 95 87 59 79 63 70 106 187 250 230 90 74 172 91 103 233 247 55 57 239 186 61 75 73 105 113 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128 226 155 191</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Common\Nucleo\Components\IIS2DH_Driver_HL.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 253</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 224</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 90 103 74 16 226 107 199 91 34 259 25 113 155 172 233 247 230 371 50</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 50 199 16 226 90 74 172 91 103 233 247 113 155 25 230 259 34 107 371</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Common\Nucleo\Components\HTS221_Driver_HL.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 263</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 102</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 371 32 103 90 230 74 226 34 58 91 49 18 16 25 113 155 172 233 247 107</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 49 32 16 226 90 74 172 91 103 233 247 113 155 25 230 18 58 34 107 371</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Common\atbox\net\wifi\spwf01sa\spwf01sa.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 368</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 145</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 90 74 247 237 256 172 230 113 66 226 233 155 195 105 191 91 103 388</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 388 256 230 90 74 172 91 103 233 247 191 195 226 113 155 105 66</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Common\MQTT-Paho\MQTTPacket\src\MQTTDeserializePublish.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 44</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 386</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 21 113 226 90 103 151 150 105 74 66 172 233 91 42 159 247 115 178 155</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 21 105 90 74 172 91 103 233 247 113 66 150 42 115 151 178 159 226 155</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_NDEF_Wifi.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 88</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 100</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 105 87 61 74 185 90 57 71 94 91 70 99 269 106 75 55 103 66 215 95 226 191 59 79 63 176 104 93 231 83 196 78 183 128 181 73 187 250 230 186 172 233 247 239 113 54 129 111 84 51 177 155</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 129 94 99 215 269 95 87 59 79 63 70 106 187 250 230 90 74 172 91 103 233 247 55 57 239 186 61 75 73 105 113 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128 226 155 191</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Common\Nucleo\Components\m24sr.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 98</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 277</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 105 106 55 90 185 103 71 70 75 74 66 87 61 91 57 95 226 191 59 79 63 176 104 93 231 83 196 78 183 128 181 73 187 250 230 186 172 233 247 239 113 54 269 111 84 51 177 155</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 269 95 87 59 79 63 70 106 187 250 230 90 74 172 91 103 233 247 55 57 239 186 61 75 73 105 113 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128 226 155 191</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 174</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 338</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 176 66 59 128 230 233 83 250 90 74 93 78 187 70 79 63 104 231 196 183 181 73 186 172 247 239 54 87 106 105 75 55 61 91 103 57 113 111 84 51 71 185 177</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 87 59 79 63 70 106 187 250 230 90 74 172 91 103 233 247 55 57 239 186 61 75 73 105 113 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Common\Nucleo\Components\LSM303AGR_ACC_driver_HL.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 261</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 216</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 371 25 247 155 74 230 90 172 238 113 233 34 199 16 226 91 103 184 107</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 184 199 16 226 90 74 172 91 103 233 247 113 155 25 230 238 34 107 371</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 248</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 161</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 105 87 61 113 90 57 91 70 84 106 75 55 74 103 111 51 59 79 63 176 104 93 231 83 196 78 183 128 181 73 187 250 230 186 172 233 247 239 66 54 71 185 177</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 87 59 79 63 70 106 187 250 230 90 74 172 91 103 233 247 55 57 239 186 61 75 73 105 113 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ramfunc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 146</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 340</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 78 70 93 187 71 59 176 83 128 250 230 90 233 74 66 79 63 104 231 196 183 181 73 186 172 247 239 54 87 106 105 75 55 61 91 103 57 113 111 84 51 185 177</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 87 59 79 63 70 106 187 250 230 90 74 172 91 103 233 247 55 57 239 186 61 75 73 105 113 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_NDEF_Vcard.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 81</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 53</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 265 94 99 215 269 95 87 59 79 63 70 106 187 250 230 90 74 172 91 103 233 247 55 57 239 186 61 75 73 105 113 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128 226 155 191</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_STProprietary_feature.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 108</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 257</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 106 105 55 90 185 269 103 71 70 75 74 66 87 61 91 57 94 99 215 95 226 191 59 79 63 176 104 93 231 83 196 78 183 128 181 73 187 250 230 186 172 233 247 239 113 54 135 111 84 51 177 155</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 135 94 99 215 269 95 87 59 79 63 70 106 187 250 230 90 74 172 91 103 233 247 55 57 239 186 61 75 73 105 113 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128 226 155 191</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Common\Nucleo\Components\LPS22HB_Driver.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 268</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 276</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 74 90 233 230 172 247 64 91 103</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 64 230 90 74 172 91 103 233 247</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_TagType4.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 110</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 121</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 187 133 215 93 74 226 78 111 140 176 83 128 250 230 90 233 70 94 220 252 95 191 59 79 63 104 231 196 183 181 73 186 172 247 239 51 113 72 265 208 129 99 269 87 105 106 75 55 61 91 103 57 66 84 177 155 147 54 71 185</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 147 220 94 99 215 269 95 87 59 79 63 70 106 187 250 230 90 74 172 91 103 233 247 55 57 239 186 61 75 73 105 113 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128 226 155 191 72 133 265 252 208 140 129</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Common\Nucleo\X_NUCLEO_IKS01A2\x_nucleo_iks01a2_gyro.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 366</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 28</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 74 230 32 105 87 91 90 61 70 45 127 16 226 103 142 106 75 54 125 199 354 25 113 155 172 233 247 118 18 59 79 63 176 104 93 231 83 196 78 183 128 181 73 187 250 55 57 71 185 189 186 239 66 111 84 51 177</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 189 125 199 16 226 90 74 172 91 103 233 247 113 155 25 230 127 354 45 87 59 79 63 70 106 187 250 55 57 239 186 61 75 73 105 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128 118 32 18 142</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Common\Nucleo\X_NUCLEO_IKS01A2\x_nucleo_iks01a2_accelero.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 352</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 359</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 231 91 74 230 118 59 63 183 73 45 90 238 199 79 104 196 181 61 70 184 127 16 226 103 18 176 93 83 78 128 187 250 54 125 50 354 25 113 155 172 233 247 259 87 32 142 106 105 75 55 57 71 185 143 186 239 66 111 84 51 177</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 143 125 199 16 226 90 74 172 91 103 233 247 113 155 25 230 127 354 184 238 50 259 45 87 59 79 63 70 106 187 250 55 57 239 186 61 75 73 105 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128 118 32 18 142</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Common\Nucleo\Components\LPS22HB_Driver_HL.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 213</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 222</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 90 371 64 226 74 103 230 142 91 34 18 16 25 113 155 172 233 247 144 107</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 144 142 16 226 90 74 172 91 103 233 247 113 155 25 230 18 64 34 107 371</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Common\Nucleo\X_NUCLEO_IKS01A2\x_nucleo_iks01a2_humidity.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 361</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 372</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 196 16 181 230 51 79 104 70 49 113 233 74 118 59 63 231 183 73 186 18 25 90 155 172 247 199 176 93 83 78 128 187 250 239 66 111 45 32 58 226 91 103 87 127 142 106 105 75 55 61 57 84 177 246 54 71 185</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 246 49 32 16 226 90 74 172 91 103 233 247 113 155 25 230 18 58 45 87 59 79 63 70 106 187 250 55 57 239 186 61 75 73 105 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128 199 127 118 142</file>
         </tool>
       </inputs>
     </file>
@@ -2123,44 +1843,113 @@
       <outputs>
         <tool>
           <name>BICOMP</name>
-          <file> 32</file>
+          <file> 353</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 37</file>
+          <file> 364</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 116 221 183 139 85 155 243 112 83 260 129 246 234 100 240 114 336 140 153 236 262 180 104 80 91 248 105 241 166 103 127 121 131 244 269 228 224 113 231 199 82 99 257 145 130 142 167 132 134 133 109 108 115 200 119 173 124 117 225</file>
+          <file> 57 176 155 90 18 128 230 71 25 247 83 250 185 49 172 64 199 93 78 187 239 113 70 16 45 233 74 142 118 59 79 63 104 231 196 183 181 73 186 144 32 58 226 91 103 87 127 106 105 75 55 61 54 138 66 111 84 51 177</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 200 100 82 80 257 139 105 240 145 130 248 260 180 183 83 243 85 99 199 241 114 91 142 103 127 121 104 132 236 246 109 116 262 231 108 133 113 134 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155 336 167 166</file>
+          <file> 138 49 32 16 226 90 74 172 91 103 233 247 113 155 25 230 18 58 144 142 64 45 87 59 79 63 70 106 187 250 55 57 239 186 61 75 73 105 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128 199 127 118</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.c</name>
+      <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c</name>
       <outputs>
         <tool>
           <name>BICOMP</name>
-          <file> 54</file>
+          <file> 229</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 253</file>
+          <file> 166</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 129 105 246 139 103 221 155 243 248 119 140 153 236 104 112 127 121 131 244 269 228 224 113 231 240 260 262 115 142 132 134 133 109 108 145 130 116 180 173 124 117 234 225</file>
+          <file> 181 230 196 79 104 247 70 54 63 231 183 73 186 172 239 74 59 176 93 83 78 128 187 250 90 233 66 71 87 106 105 75 55 61 91 103 57 113 111 84 51 185 177</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 142 103 127 121 104 132 236 246 243 139 105 240 145 130 248 260 109 116 262 231 108 133 113 134 180 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155</file>
+          <file> 87 59 79 63 70 106 187 250 230 90 74 172 91 103 233 247 55 57 239 186 61 75 73 105 113 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Common\Nucleo\X_NUCLEO_IKS01A2\x_nucleo_iks01a2_pressure.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 48</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 369</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 79 104 16 51 196 181 230 70 18 113 233 74 118 59 63 231 183 73 186 144 25 90 155 172 247 199 176 93 83 78 128 187 250 239 66 111 45 142 64 226 91 103 87 127 32 106 105 75 55 61 57 84 177 149 54 71 185</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 149 144 142 16 226 90 74 172 91 103 233 247 113 155 25 230 18 64 45 87 59 79 63 70 106 187 250 55 57 239 186 61 75 73 105 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128 199 127 118 32</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Common\Nucleo\X_NUCLEO_IKS01A2\x_nucleo_iks01a2_magneto.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 391</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 46</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 70 74 90 87 54 118 91 230 32 105 61 165 226 103 127 142 106 75 55 57 16 45 130 25 113 155 172 233 247 199 18 59 79 63 176 104 93 231 83 196 78 183 128 181 73 187 250 186 239 71 185 109 66 111 84 51 177</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 109 165 118 16 226 90 74 172 91 103 233 247 113 155 25 230 130 45 87 59 79 63 70 106 187 250 55 57 239 186 61 75 73 105 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128 199 127 32 18 142</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 342</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 179</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 70 57 87 91 84 105 61 90 113 106 75 55 74 103 111 51 59 79 63 176 104 93 231 83 196 78 183 128 181 73 187 250 230 186 172 233 247 239 66 54 71 185 177</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 87 59 79 63 70 106 187 250 230 90 74 172 91 103 233 247 55 57 239 186 61 75 73 105 113 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128</file>
         </tool>
       </inputs>
     </file>
@@ -2169,44 +1958,182 @@
       <outputs>
         <tool>
           <name>BICOMP</name>
-          <file> 342</file>
+          <file> 202</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 111</file>
+          <file> 62</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 139 64 105 166 145 70 257 130 210 172 80 83 180 183 240 248 260 243 176</file>
+          <file> 90 371 74 118 91 34 226 103 165 130 16 25 113 155 172 233 247 230 107</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 210 166 80 257 139 105 240 145 130 248 260 180 183 83 243 172 70 176 64</file>
+          <file> 165 118 16 226 90 74 172 91 103 233 247 113 155 25 230 130 34 107 371</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c</name>
+      <name>$PROJ_DIR$\..\..\Common\Nucleo\Components\LSM6DSL_ACC_GYRO_driver_HL.c</name>
       <outputs>
         <tool>
           <name>BICOMP</name>
-          <file> 76</file>
+          <file> 86</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 63</file>
+          <file> 212</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 104 127 131 260 115 269 224 243 121 244 228 113 231 240 262 105 103 221 140 129 153 155 236 246 139 248 119 142 132 134 133 109 108 145 130 116 180 173 124 117 112 234 225</file>
+          <file> 371 74 199 113 233 16 354 25 90 155 172 247 230 34 127 226 91 103 125 107</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 142 103 127 121 104 132 236 246 243 139 105 240 145 130 248 260 109 116 262 231 108 133 113 134 180 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155</file>
+          <file> 125 199 16 226 90 74 172 91 103 233 247 113 155 25 230 127 354 34 107 371</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_crc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 27</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 344</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 63 74 172 186 183 73 239 231 79 104 196 181 230 247 70 54 59 176 93 83 78 128 187 250 90 233 66 71 87 106 105 75 55 61 91 103 57 113 111 84 51 185 177</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 87 59 79 63 70 106 187 250 230 90 74 172 91 103 233 247 55 57 239 186 61 75 73 105 113 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\lib_NDEF_URI.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 112</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 209</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 181 230 226 78 185 215 93 247 71 176 83 128 73 186 172 239 90 70 94 95 191 59 79 63 104 231 196 183 187 250 233 74 99 269 87 105 106 75 55 61 91 103 57 113 54 220 66 111 84 51 177 155</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 220 94 99 215 269 95 87 59 79 63 70 106 187 250 230 90 74 172 91 103 233 247 55 57 239 186 61 75 73 105 113 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128 226 155 191</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 343</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 225</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 83 74 250 90 59 176 128 230 233 66 93 78 187 70 71 79 63 104 231 196 183 181 73 186 172 247 239 54 87 106 105 75 55 61 91 103 57 113 111 84 51 185 177</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 87 59 79 63 70 106 187 250 230 90 74 172 91 103 233 247 55 57 239 186 61 75 73 105 113 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Common\Nucleo\Components\LSM303AGR_ACC_driver.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 124</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 214</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 74 90 230 233 172 247 238 91 103</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 238 230 90 74 172 91 103 233 247</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Common\Nucleo\Components\LSM303AGR_MAG_driver.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 258</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 271</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 74 90 233 172 247 130 230 91 103</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 130 230 90 74 172 91 103 233 247</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Common\Nucleo\Components\LSM6DSL_ACC_GYRO_driver.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 260</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 200</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 74 90 233 230 172 247 354 91 103</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 354 230 90 74 172 91 103 233 247</file>
         </tool>
       </inputs>
     </file>
@@ -2215,21 +2142,44 @@
       <outputs>
         <tool>
           <name>BICOMP</name>
-          <file> 56</file>
+          <file> 339</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 74</file>
+          <file> 24</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 244 103 121 228 113 231 240 262 127 131 269 224 243 260 105 104 221 140 129 153 155 236 246 139 248 115 142 132 134 133 109 108 145 130 116 119 112 234 180 173 124 117 225</file>
+          <file> 231 59 63 183 73 186 172 239 79 104 196 181 230 247 74 70 176 93 83 78 128 187 250 90 233 54 87 106 105 75 55 61 91 103 57 66 71 185 113 111 84 51 177</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 142 103 127 121 104 132 236 246 243 139 105 240 145 130 248 260 109 116 262 231 108 133 113 134 180 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155</file>
+          <file> 87 59 79 63 70 106 187 250 230 90 74 172 91 103 233 247 55 57 239 186 61 75 73 105 113 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 235</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 164</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 79 247 104 54 70 196 181 230 63 231 183 73 186 172 239 74 59 176 93 83 78 128 187 250 90 233 66 71 87 106 105 75 55 61 91 103 57 113 111 84 51 185 177</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 87 59 79 63 70 106 187 250 230 90 74 172 91 103 233 247 55 57 239 186 61 75 73 105 113 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128</file>
         </tool>
       </inputs>
     </file>
@@ -2238,21 +2188,21 @@
       <outputs>
         <tool>
           <name>BICOMP</name>
-          <file> 272</file>
+          <file> 205</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 219</file>
+          <file> 167</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 104 133 105 139 132 109 130 173 142 134 108 145 116 180 124 115 103 127 121 221 131 140 244 129 269 153 228 155 224 113 236 246 243 231 240 248 260 262 119 112 234 117 225</file>
+          <file> 70 75 74 90 106 55 103 111 87 105 61 91 57 113 84 54 59 79 63 176 104 93 231 83 196 78 183 128 181 73 187 250 230 186 172 233 247 239 66 71 185 51 177</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 142 103 127 121 104 132 236 246 243 139 105 240 145 130 248 260 109 116 262 231 108 133 113 134 180 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155</file>
+          <file> 87 59 79 63 70 106 187 250 230 90 74 172 91 103 233 247 55 57 239 186 61 75 73 105 113 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128</file>
         </tool>
       </inputs>
     </file>
@@ -2261,67 +2211,44 @@
       <outputs>
         <tool>
           <name>BICOMP</name>
-          <file> 258</file>
+          <file> 227</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 118</file>
+          <file> 52</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 231 121 240 105 228 113 262 244 127 131 269 224 243 260 104 115 103 221 140 129 153 155 236 246 139 248 119 112 142 132 134 133 109 108 145 130 116 180 173 124 117 234 225</file>
+          <file> 186 63 172 74 183 73 239 231 79 104 196 181 230 247 70 54 59 176 93 83 78 128 187 250 90 233 66 71 87 106 105 75 55 61 91 103 57 113 111 84 51 185 177</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 142 103 127 121 104 132 236 246 243 139 105 240 145 130 248 260 109 116 262 231 108 133 113 134 180 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155</file>
+          <file> 87 59 79 63 70 106 187 250 230 90 74 172 91 103 233 247 55 57 239 186 61 75 73 105 113 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c</name>
+      <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c</name>
       <outputs>
         <tool>
           <name>BICOMP</name>
-          <file> 59</file>
+          <file> 20</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 60</file>
+          <file> 356</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 246 139 129 105 103 221 155 243 248 119 140 153 236 104 127 121 131 244 269 228 224 113 231 240 260 262 115 142 132 134 133 109 108 145 130 116 180 173 124 117 112 234 225</file>
+          <file> 70 79 104 247 54 196 181 230 63 231 183 73 186 172 239 74 59 176 93 83 78 128 187 250 90 233 66 87 106 105 75 55 61 91 103 57 113 111 84 51 71 185 177</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 142 103 127 121 104 132 236 246 243 139 105 240 145 130 248 260 109 116 262 231 108 133 113 134 180 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 263</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 51</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 104 116 142 145 124 134 108 139 180 132 133 109 105 130 173 117 103 127 121 221 131 140 244 129 269 153 228 155 224 113 236 246 243 231 240 248 260 262 119 115 112 234 225</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 142 103 127 121 104 132 236 246 243 139 105 240 145 130 248 260 109 116 262 231 108 133 113 134 180 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155</file>
+          <file> 87 59 79 63 70 106 187 250 230 90 74 172 91 103 233 247 55 57 239 186 61 75 73 105 113 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128</file>
         </tool>
       </inputs>
     </file>
@@ -2330,21 +2257,21 @@
       <outputs>
         <tool>
           <name>BICOMP</name>
-          <file> 72</file>
+          <file> 30</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 261</file>
+          <file> 241</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 116 104 142 145 124 134 108 139 180 132 133 109 105 130 173 117 103 127 121 221 131 140 244 129 269 153 228 155 224 113 236 246 243 231 240 248 260 262 119 115 112 234 225</file>
+          <file> 57 70 87 91 84 105 61 90 113 106 75 55 74 103 111 51 59 79 63 176 104 93 231 83 196 78 183 128 181 73 187 250 230 186 172 233 247 239 66 54 71 185 177</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 142 103 127 121 104 132 236 246 243 139 105 240 145 130 248 260 109 116 262 231 108 133 113 134 180 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155</file>
+          <file> 87 59 79 63 70 106 187 250 230 90 74 172 91 103 233 247 55 57 239 186 61 75 73 105 113 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128</file>
         </tool>
       </inputs>
     </file>
@@ -2353,24 +2280,96 @@
       <outputs>
         <tool>
           <name>BICOMP</name>
-          <file> 69</file>
+          <file> 43</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 274</file>
+          <file> 197</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 117 104 133 105 139 132 109 130 173 142 134 108 145 116 180 124 103 127 121 221 131 140 244 129 269 153 228 155 224 113 236 246 243 231 240 248 260 262 119 115 112 234 225</file>
+          <file> 51 70 75 74 90 106 55 103 111 87 105 61 91 57 113 84 59 79 63 176 104 93 231 83 196 78 183 128 181 73 187 250 230 186 172 233 247 239 66 54 71 185 177</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 142 103 127 121 104 132 236 246 243 139 105 240 145 130 248 260 109 116 262 231 108 133 113 134 180 119 224 221 173 131 124 140 244 129 117 115 269 112 153 225 228 234 155</file>
+          <file> 87 59 79 63 70 106 187 250 230 90 74 172 91 103 233 247 55 57 239 186 61 75 73 105 113 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128</file>
         </tool>
       </inputs>
     </file>
+    <file>
+      <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 240</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 350</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 70 57 87 91 84 105 61 90 113 106 75 55 74 103 111 51 59 79 63 176 104 93 231 83 196 78 183 128 181 73 187 250 230 186 172 233 247 239 66 54 71 185 177</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 87 59 79 63 70 106 187 250 230 90 74 172 91 103 233 247 55 57 239 186 61 75 73 105 113 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 251</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 156</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 247 79 104 196 181 230 59 63 231 183 73 186 172 239 74 70 176 93 83 78 128 187 250 90 233 54 87 106 105 75 55 61 91 103 57 66 71 185 113 111 84 51 177</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 87 59 79 63 70 106 187 250 230 90 74 172 91 103 233 247 55 57 239 186 61 75 73 105 113 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 357</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 341</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 250 90 83 74 59 176 128 230 233 66 93 78 187 70 79 63 104 231 196 183 181 73 186 172 247 239 54 87 106 105 75 55 61 91 103 57 113 111 84 51 71 185 177</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 87 59 79 63 70 106 187 250 230 90 74 172 91 103 233 247 55 57 239 186 61 75 73 105 113 66 181 176 111 104 84 93 231 83 51 54 196 71 78 177 183 185 128</file>
+        </tool>
+      </inputs>
+    </file>
+    <forcedrebuild>
+      <name>[REBUILD_ALL]</name>
+    </forcedrebuild>
   </configuration>
 </project>
 

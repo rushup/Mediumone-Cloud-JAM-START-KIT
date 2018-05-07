@@ -1284,7 +1284,7 @@
       </file>
     </group>
     <group>
-      <name>Nucleo</name>
+      <name>NUCLEO</name>
       <file>
         <name>$PROJ_DIR$\..\..\Common\Nucleo\X-NUCLEO-NFC01A1\drv_I2C_M24SR.c</name>
       </file>

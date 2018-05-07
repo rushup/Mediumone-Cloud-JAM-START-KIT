@@ -89,7 +89,25 @@ void HAL_I2C_MspInit(I2C_HandleTypeDef* i2cHandle)
   if(i2cHandle->Instance==I2C1)
   {
   /* USER CODE BEGIN I2C1_MspInit 0 */
-
+  restop:
+    __HAL_RCC_I2C1_CLK_DISABLE();
+    
+    
+    GPIO_InitStruct.Pin = MEMS_I2C1_SCL_Pin|MEMS_I2C1_SDA_Pin;
+    GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+    GPIO_InitStruct.Pull = GPIO_PULLUP;
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+    HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+    
+    for(int i=0; i < 1; i++)
+    {
+      HAL_GPIO_WritePin(GPIOB, MEMS_I2C1_SDA_Pin, GPIO_PIN_SET);
+      HAL_GPIO_WritePin(GPIOB, MEMS_I2C1_SCL_Pin, GPIO_PIN_RESET);
+      HAL_Delay(30);
+      HAL_GPIO_WritePin(GPIOB, MEMS_I2C1_SDA_Pin, GPIO_PIN_RESET);
+      HAL_Delay(10);
+    }
+    
   /* USER CODE END I2C1_MspInit 0 */
   
     /**I2C1 GPIO Configuration    
@@ -111,9 +129,16 @@ void HAL_I2C_MspInit(I2C_HandleTypeDef* i2cHandle)
     HAL_NVIC_EnableIRQ(I2C1_EV_IRQn);
     HAL_NVIC_SetPriority(I2C1_ER_IRQn, 3, 0);
     HAL_NVIC_EnableIRQ(I2C1_ER_IRQn);
-  /* USER CODE BEGIN I2C1_MspInit 1 */
-
-  /* USER CODE END I2C1_MspInit 1 */
+    /* USER CODE BEGIN I2C1_MspInit 1 */
+    if(__HAL_I2C_GET_FLAG(&hi2c1, I2C_FLAG_BUSY) == 1)
+    {
+      hi2c1.Instance->CR1 |= 0x8000; //SWRST
+      HAL_Delay(100);
+      hi2c1.Instance->CR1 &= ~0x8000; //SWRST
+      asm("nop");
+      goto restop;
+    }
+    /* USER CODE END I2C1_MspInit 1 */
   }
 }
 
