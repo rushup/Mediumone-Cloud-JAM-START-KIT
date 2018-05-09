@@ -275,7 +275,7 @@ void app_loop()
   case mqtt_socket_create:
     
     if(spwf01sa_open(&wifi_handle, (char*) m1_mqtt.hostname, m1_mqtt.port, m1_mqtt.protocol, (uint16_t*) &network.my_socket)<0){
-      myprintf("\r\n [E]. Socket opening failed. Please check MQTT configuration. Trying reconnection.... \r\n");
+      myprintf("\r\n [E]. Socket opening failed. Please check MQTT configuration. Trying reconnection... \r\n");
       myprintf((char*)m1_mqtt.hostname);
       myprintf("\r\n");
       myprintf((char*)(&m1_mqtt.protocol));

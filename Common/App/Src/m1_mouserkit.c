@@ -661,6 +661,7 @@ void m1_inc_btn_pres()
 static void _query_param(const char* ask_str, char* fill_buff, int max_fill_buf_size)
 {
   uint16_t console_count=0;
+  bool end = false;
   
   myprintf("\r\n%s",ask_str);
 
@@ -674,14 +675,21 @@ static void _query_param(const char* ask_str, char* fill_buff, int max_fill_buf_
     console_count = strlen(usb_data_buffer);
     
     if(console_count > 0)
-      asm("nop");
-    
-    if(usb_data_buffer[console_count - 1] == '\r'){
-      usb_data_buffer[console_count - 1] = 0;
-      console_count--;
-      break;
+    {
+      while(1){
+        if(console_count > 0 && (usb_data_buffer[console_count - 1] == '\r' || usb_data_buffer[console_count - 1] == '\n'))
+        {
+          usb_data_buffer[console_count - 1] = 0;
+          console_count--;
+          end = true;
+        }
+        else
+          break;
+      }
     }
     
+    if(end == true)
+      break;
   }
   
   if(console_count > 0)

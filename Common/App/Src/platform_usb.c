@@ -12,11 +12,22 @@ uint16_t new_usb_data_cb(char* data, uint16_t len)
 #else
   for(int i=0; i < len; i++)
   {
-    if(usb_data_buffer_index < (USB_DATA_BUFFER_SIZE - 2))
-      usb_data_buffer[usb_data_buffer_index++] = data[i];
     
-    if(data[i] != '\r')
+    if(data[i] != '\b')
+    {
+      if(usb_data_buffer_index < (USB_DATA_BUFFER_SIZE - 2))
+        usb_data_buffer[usb_data_buffer_index++] = data[i];
+      
+    }else if(usb_data_buffer_index > 0)
+    {
+      usb_data_buffer[usb_data_buffer_index-1] = 0;
+      usb_data_buffer_index--;
+    }
+    
+    if(data[i] != '\r' && data[i] != '\b')
       uart_send(&uart_usb, &data[i], 1);
+    if(data[i] == '\b')
+      uart_send(&uart_usb, "\b \b", 3);
   }
   
 #endif
@@ -25,6 +36,7 @@ uint16_t new_usb_data_cb(char* data, uint16_t len)
   
   return len;
 }
+
 
 void usb_data_buffer_clear()
 {
