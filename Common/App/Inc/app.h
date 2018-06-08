@@ -11,8 +11,8 @@
 #include "x_nucleo_iks01a2_magneto.h"
 #include "sensor.h"
 
-#define FW_VERSION 0
-#define FW_SUBVERSION 17
+#define FW_VERSION 1
+#define FW_SUBVERSION 0
 
 #define REDIRECT_WIFI_TO_USB 0
 
